@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pipeline Color Coding - EMMT Learning</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">📚 EMMT Learning</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="fastener-joint.html" class="nav-link">Fastener & Joint</a></li>
+                <li><a href="pfd-symbols.html" class="nav-link">PFD Symbols</a></li>
+                <li><a href="pipe-schedule-hazop.html" class="nav-link">Pipe & HAZOP</a></li>
+                <li><a href="pipeline-colors.html" class="nav-link active">Pipeline Colors</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <section class="content-section">
+        <h1>🎨 Pipeline Color Coding (ASME A13.1)</h1>
+        <p><strong>Last Updated:</strong> 2024 | <strong>Level:</strong> Intermediate | <strong>Est. Reading Time:</strong> 40 minutes</p>
+
+        <!-- 1. Pengenalan Pipeline Identification -->
+        <h2>1. Pengenalan Pipeline Identification System</h2>
+        <div class="content-box">
+            <h3>Apa itu Pipeline Color Coding?</h3>
+            <p>Pipeline color coding adalah sistem standar untuk mengidentifikasi konten pipa (liquid atau gas yang mengalir) berdasarkan warna cat atau warna label yang dipasang pada pipa. Sistem ini memastikan semua operator, maintenance crew, dan emergency responders dapat dengan cepat dan akurat mengidentifikasi apa yang ada di dalam pipa untuk keselamatan dan efisiensi operasi.</p>
+
+            <h3>Tujuan Pipeline Color Coding:</h3>
+            <ul>
+                <li><strong>Safety:</strong> Prevent mistakes yang bisa cause accident atau injury (e.g., wrong valve opened)</li>
+                <li><strong>Emergency Response:</strong> Memudahkan emergency personnel untuk identify hazardous materials</li>
+                <li><strong>Maintenance:</strong> Facilitate maintenance works dengan quick identification dari pipe content</li>
+                <li><strong>Compliance:</strong> Meet regulatory requirements dan industry standards</li>
+                <li><strong>Education:</strong> Train operators dan new employees tentang sistem pipa</li>
+                <li><strong>Process Efficiency:</strong> Reduce confusion dan operational errors</li>
+            </ul>
+
+            <h3>Standar Pipeline Color Coding Internasional:</h3>
+            <ul>
+                <li><strong>ASME A13.1:2020:</strong> Scheme for the Identification of Piping Systems (American Standard - MOST WIDELY USED)</li>
+                <li><strong>BS 1710:2014:</strong> Pipelines identification code (British Standard)</li>
+                <li><strong>ISO 14726:2015:</strong> Safety identification colouring of pipes and pipe fittings (International)</li>
+                <li><strong>DIN 2403:</strong> Identification of pipelines by colours (German Standard)</li>
+                <li><strong>AS 1345:</strong> Identification of the contents of pipes and pipe fittings (Australian Standard)</li>
+            </ul>
+
+            <h3>Sejarah & Evolusi:</h3>
+            <ul>
+                <li><strong>Early 1900s:</strong> Color coding mulai digunakan secara informal di industri</li>
+                <li><strong>1948:</strong> ASME membuat standardisasi pertama (ASA C53.1)</li>
+                <li><strong>1982:</strong> ASME A13.1 dipublikasikan dengan color standards yang comprehensive</li>
+                <li><strong>2020:</strong> Update terbaru dengan enhanced requirements untuk safety dan clarity</li>
+            </ul>
+        </div>
+
+        <!-- 2. ASME A13.1 Color Code System -->
+        <h2>2. ASME A13.1:2020 Color Code System</h2>
+        <div class="content-box">
+            <h3>8 Warna Standar ASME A13.1 dan Maknanya:</h3>
+
+            <h4>🔴 1. RED (Merah) - Fire Quenching Fluids</h4>
+            <p><strong>Fungsi:</strong> Identify pipa yang mengalirkan liquid untuk pemadam api atau sistem pendingin dengan tujuan fire safety</p>
+            <p><strong>Contoh Konten:</strong></p>
+            <ul>
+                <li>Fire fighting water supply</li>
+                <li>Sprinkler system water</li>
+                <li>Foam system for fire suppression</li>
+                <li>Emergency cooling water</li>
+            </ul>
+            <p><strong>Label Text Color:</strong> Putih (White)</p>
+            <p><strong>Urgency Level:</strong> Tinggi (High priority untuk safety)</p>
+
+            <h4>🟡 2. YELLOW (Kuning) - Toxic & Corrosive Fluids</h4>
+            <p><strong>Fungsi:</strong> Identify pipa yang mengalirkan liquid atau gas yang toxic atau highly corrosive</p>
+            <p><strong>Contoh Konten:</strong></p>
+            <ul>
+                <li>Sulfuric acid (H₂SO₄)</li>
+                <li>Hydrochloric acid (HCl)</li>
+                <li>Ammonia gas (NH₃)</li>
+                <li>Chlorine gas (Cl₂)</li>
+                <li>Caustic soda (NaOH)</li>
+                <li>Hydrogen sulfide (H₂S)</li>
+            </ul>
+            <p><strong>Label Text Color:</strong> Hitam (Black)</p>
+            <p><strong>Urgency Level:</strong> Sangat Tinggi (Critical - health hazard)</p>
+
+            <h4>🟤 3. BROWN (Coklat) - Flammable Fluids</h4>
+            <p><strong>Fungsi:</strong> Identify pipa yang mengalirkan liquid yang flammable (mudah terbakar)</p>
+            <p><strong>Contoh Konten:</strong></p>
+            <ul>
+                <li>Gasoline / Petrol</li>
+                <li>Diesel fuel</li>
+                <li>Kerosene</li>
+                <li>Crude oil</li>
+                <li>Liquid petroleum gas (LPG) - dalam kondisi liquid</li>
+                <li>Solvent dan organic liquids</li>
+            </ul>
+            <p><strong>Label Text Color:</strong> Putih (White)</p>
+            <p><strong>Urgency Level:</strong> Tinggi (Fire hazard)</p>
+
+            <h4>🟠 4. ORANGE (Oranye) - Combustible Fluids</h4>
+            <p><strong>Fungsi:</strong> Identify pipa yang mengalirkan liquid yang combustible (dapat terbakar tapi tidak seflammable seperti kategori brown)</p>
+            <p><strong>Contoh Konten:</strong></p>
+            <ul>
+                <li>Diesel oil (heating oil)</li>
+                <li>Fuel oil (#2, #4, #5, #6)</li>
+                <li>Lubricating oil</li>
+                <li>Hydraulic oil</li>
+                <li>Transformer oil</li>
+                <li>Mineral oil</li>
+            </ul>
+            <p><strong>Label Text Color:</strong> Hitam (Black)</p>
+            <p><strong>Urgency Level:</strong> Sedang (Moderate fire hazard)</p>
+
+            <h4>🟢 5. GREEN (Hijau) - Other Liquids (Water & Safe Liquids)</h4>
+            <p><strong>Fungsi:</strong> Identify pipa yang mengalirkan liquid yang tidak toxic dan tidak flammable</p>
+            <p><strong>Contoh Konten:</strong></p>
+            <ul>
+                <li>Potable water (air minum)</li>
+                <li>Chilled water untuk cooling</li>
+                <li>Cooling water dari cooling tower</li>
+                <li>Hot water untuk heating</li>
+                <li>De-ionized water</li>
+                <li>Non-toxic process water</li>
+                <li>Boiler feedwater</li>
+            </ul>
+            <p><strong>Label Text Color:</strong> Putih (White)</p>
+            <p><strong>Urgency Level:</strong> Rendah (Safe liquid)</p>
+
+            <h4>🔵 6. BLUE (Biru) - Compressed & Liquefied Gases</h4>
+            <p><strong>Fungsi:</strong> Identify pipa yang mengalirkan gas yang compressed atau dalam kondisi liquefied</p>
+            <p><strong>Contoh Konten:</strong></p>
+            <ul>
+                <li>Compressed air untuk pneumatic system</li>
+                <li>Instrument air</li>
+                <li>Nitrogen gas (N₂) - compressed</li>
+                <li>Oxygen gas (O₂) - compressed</li>
+                <li>Carbon dioxide (CO₂) - liquid atau compressed</li>
+                <li>Hydrogen gas (H₂) - compressed</li>
+                <li>Natural gas - compressed</li>
+            </ul>
+            <p><strong>Label Text Color:</strong> Putih (White)</p>
+            <p><strong>Urgency Level:</strong> Sedang (Pressure hazard)</p>
+
+            <h4>⚫ 7. GRAY / GREY (Abu-abu) - Neutral Gases</h4>
+            <p><strong>Fungsi:</strong> Identify pipa yang mengalirkan gas yang neutral atau non-reactive</p>
+            <p><strong>Contoh Konten:</strong></p>
+            <ul>
+                <li>Nitrogen gas (N₂) untuk inert blanket</li>
+                <li>Argon gas untuk welding</li>
+                <li>Helium gas</li>
+                <li>Non-hazardous gases</li>
+            </ul>
+            <p><strong>Label Text Color:</strong> Hitam (Black)</p>
+            <p><strong>Urgency Level:</strong> Rendah (Generally safe)</p>
+
+            <h4>⬛ 8. BLACK (Hitam) - Other Fluids & Misc</h4>
+            <p><strong>Fungsi:</strong> Identify pipa yang mengalirkan fluid lainnya yang tidak masuk ke kategori di atas</p>
+            <p><strong>Contoh Konten:</strong></p>
+            <ul>
+                <li>Steam (uap/steam panas)</li>
+                <li>Brine atau salt water</li>
+                <li>Process waste</li>
+                <li>Drain line</li>
+                <li>Sewage dan wastewater</li>
+                <li>Unknown atau miscellaneous fluids</li>
+            </ul>
+            <p><strong>Label Text Color:</strong> Putih (White)</p>
+            <p><strong>Urgency Level:</strong> Bervariasi</p>
+
+            <div class="image-placeholder">
+                <p><strong>🖼️ GAMBAR DIBUTUHKAN:</strong><br>
+                <strong>Filename:</strong> asme-color-swatches.png<br>
+                <strong>Ukuran:</strong> 900x450px<br>
+                <strong>Deskripsi:</strong> Visual color swatches untuk 8 warna ASME A13.1 dengan label text color dan hex code. Format: grid 2x4 atau 1x8 dengan sample warna actual, nama warna, dan contoh 2-3 konten untuk setiap warna.</p>
+            </div>
+
+            <h3>Tabel Referensi Lengkap Color Coding:</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Warna</th>
+                        <th>Kategori Fluid</th>
+                        <th>Text Color</th>
+                        <th>Hex Code</th>
+                        <th>Contoh Aplikasi</th>
+                        <th>Hazard Level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong style="color: white; background: red; padding: 0.5rem;">RED</strong></td>
+                        <td>Fire Quenching</td>
+                        <td>White</td>
+                        <td>#FF0000</td>
+                        <td>Sprinkler, Fire suppression</td>
+                        <td>🔴 High</td>
+                    </tr>
+                    <tr>
+                        <td><strong style="color: black; background: yellow; padding: 0.5rem;">YELLOW</strong></td>
+                        <td>Toxic & Corrosive</td>
+                        <td>Black</td>
+                        <td>#FFFF00</td>
+                        <td>Acid, Ammonia, Chlorine</td>
+                        <td>🔴🔴 Critical</td>
+                    </tr>
+                    <tr>
+                        <td><strong style="color: white; background: brown; padding: 0.5rem;">BROWN</strong></td>
+                        <td>Flammable</td>
+                        <td>White</td>
+                        <td>#964B00</td>
+                        <td>Gasoline, Fuel oil</td>
+                        <td>🔴 High</td>
+                    </tr>
+                    <tr>
+                        <td><strong style="color: black; background: orange; padding: 0.5rem;">ORANGE</strong></td>
+                        <td>Combustible</td>
+                        <td>Black</td>
+                        <td>#FFA500</td>
+                        <td>Heating oil, Lubricant</td>
+                        <td>🟡 Moderate</td>
+                    </tr>
+                    <tr>
+                        <td><strong style="color: black; background: lightgreen; padding: 0.5rem;">GREEN</strong></td>
+                        <td>Safe Liquids</td>
+                        <td>White</td>
+                        <td>#00AA00</td>
+                        <td>Potable water, Cooling</td>
+                        <td>🟢 Low</td>
+                    </tr>
+                    <tr>
+                        <td><strong style="color: white; background: blue; padding: 0.5rem;">BLUE</strong></td>
+                        <td>Compressed Gas</td>
+                        <td>White</td>
+                        <td>#0000FF</td>
+                        <td>Instrument air, N₂</td>
+                        <td>🟡 Moderate</td>
+                    </tr>
+                    <tr>
+                        <td><strong style="color: black; background: gray; padding: 0.5rem;">GRAY</strong></td>
+                        <td>Neutral Gas</td>
+                        <td>Black</td>
+                        <td>#808080</td>
+                        <td>Inert N₂, Argon</td>
+                        <td>🟢 Low</td>
+                    </tr>
+                    <tr>
+                        <td><strong style="color: white; background: black; padding: 0.5rem;">BLACK</strong></td>
+                        <td>Miscellaneous</td>
+                        <td>White</td>
+                        <td>#000000</td>
+                        <td>Steam, Drain, Waste</td>
+                        <td>🟡 Varies</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 3. Pipe Marking Placement Guidelines -->
+        <h2>3. Placement Guidelines untuk Color Bands</h2>
+        <div class="content-box">
+            <h3>Standar Penempatan Color Bands:</h3>
+            <p><strong>ASME A13.1 Requirements:</strong></p>
+
+            <h4>a. Location pada Pipa:</h4>
+            <ul>
+                <li><strong>Primary Locations:</strong> Setiap 25-50 feet (7.6-15 m) di straight run pipa</li>
+                <li><strong>At Changes:</strong> Di setiap perubahan arah (elbow, tee, reducer)</li>
+                <li><strong>At Boundaries:</strong> Di entrance dan exit dari wall, floor, ceiling</li>
+                <li><strong>At Equipment:</strong> Di setiap connection ke equipment (pump inlet/outlet, valve inlet/outlet)</li>
+                <li><strong>At Junctions:</strong> Di setiap branch connection dan junction</li>
+                <li><strong>Near Valve:</strong> Di dalam 2 feet dari valve untuk identification mudah</li>
+            </ul>
+
+            <h4>b. Orientation & Size:</h4>
+            <ul>
+                <li><strong>Band Width:</strong> 1-2 inches (25-50 mm) untuk color band</li>
+                <li><strong>Orientation:</strong> Horizontal band untuk pipa horizontal atau vertical, parallel dengan pipa direction</li>
+                <li><strong>Font Size:</strong> Minimum 1/2 inch (12 mm) untuk label text</li>
+                <li><strong>Contrast:</strong> Ensure text color contrast dengan background color untuk visibility</li>
+            </ul>
+
+            <h4>c. Additional Information pada Label:</h4>
+            <p>Selain warna, label juga harus berisi:</p>
+            <ul>
+                <li><strong>Pipe Content Name:</strong> Nama lengkap fluid (e.g., "Cooling Water", "Ammonia Gas")</li>
+                <li><strong>Direction Arrow:</strong> Arrow menunjukkan arah aliran (optional tapi recommended)</li>
+                <li><strong>Pressure/Temperature (Optional):</strong> Operating pressure dan temperature bisa ditambahkan untuk critical applications</li>
+                <li><strong>Hazard Warnings:</strong> Simbol bahaya tambahan jika perlu (e.g., toxic symbol, flammable symbol)</li>
+            </ul>
+
+            <div class="image-placeholder">
+                <p><strong>🖼️ GAMBAR DIBUTUHKAN:</strong><br>
+                <strong>Filename:</strong> pipe-marking-placement.png<br>
+                <strong>Ukuran:</strong> 800x400px<br>
+                <strong>Deskripsi:</strong> Diagram penempatan color bands di pipa. Tunjukkan: (1) Pipa horizontal dengan band spacing 25-50 feet, (2) Pipa vertical dengan band placement, (3) Color band di elbow, (4) Band di junction/tee, (5) Band near valve. Tunjukkan dimensi dan spacing dengan jelas.</p>
+            </div>
+
+            <div class="image-placeholder">
+                <p><strong>🖼️ GAMBAR DIBUTUHKAN:</strong><br>
+                <strong>Filename:</strong> color-band-frequency.png<br>
+                <strong>Ukuran:</strong> 700x300px<br>
+                <strong>Deskripsi:</strong> Ilustrasi spacing rule untuk color bands: showing 25-50 feet interval (7.6-15 m) untuk typical plant layout. Tunjukkan pipa dengan multiple color bands dengan distance annotation. Include small text untuk frequency requirements.</p>
+            </div>
+        </div>
+
+        <!-- 4. Label Design & Content -->
+        <h2>4. Label Design & Content Standards</h2>
+        <div class="content-box">
+            <h3>Essential Information pada Label:</h3>
+            <ul>
+                <li><strong>Color Band:</strong> Warna background sesuai ASME A13.1</li>
+                <li><strong>Pipe Content:</strong> Nama lengkap dari apa yang ada di pipa (e.g., "Cooling Water", "Ammonia Gas", "Fire Suppression Water")</li>
+                <li><strong>Flow Direction:</strong> Arrow menunjukkan direction aliran (dapat berupa → atau text)</li>
+                <li><strong>Operating Pressure (Optional):</strong> "150 PSI" untuk critical lines</li>
+                <li><strong>Operating Temperature (Optional):</strong> "250°F" untuk critical lines</li>
+                <li><strong>Date Installed (Optional):</strong> Installation date untuk tracking</li>
+            </ul>
+
+            <h3>Label Format Examples:</h3>
+            <p><strong>Simple Format:</strong></p>
+            <p style="background: #f0f8ff; padding: 1rem; text-align: center; border-left: 4px solid orange;">
+                🟠<br>
+                <strong>Heating Oil</strong><br>
+                →
+            </p>
+
+            <p><strong>Detailed Format:</strong></p>
+            <p style="background: #f0f8ff; padding: 1rem; text-align: center; border-left: 4px solid red;">
+                🔴<br>
+                <strong>Fire Suppression Water</strong><br>
+                → 100 PSI | 70°F
+            </p>
+
+            <h3>Material & Durability:</h3>
+            <ul>
+                <li><strong>Color Paint:</strong> Alkali-resistant, fade-resistant paint (minimum 5-year durability)</li>
+                <li><strong>Label Material:</strong> Adhesive labels harus weather-resistant atau vinyl untuk outdoor exposure</li>
+                <li><strong>Reflective Paint (Optional):</strong> High-visibility reflective paint untuk dark or poorly lit areas</li>
+                <li><strong>Maintenance:</strong> Repaint labels yang faded atau damaged untuk maintain visibility</li>
+            </ul>
+
+            <div class="image-placeholder">
+                <p><strong>🖼️ GAMBAR DIBUTUHKAN:</strong><br>
+                <strong>Filename:</strong> label-examples-all.png<br>
+                <strong>Ukuran:</strong> 700x400px<br>
+                <strong>Deskripsi:</strong> Contoh 4 label yang berbeda: (1) Red - Fire Suppression Water dengan arrow, (2) Yellow - Ammonia Gas dengan hazard symbol, (3) Green - Cooling Water dengan temperature, (4) Blue - Compressed Air dengan pressure. Tunjukkan font, color contrast, dan layout.</p>
+            </div>
+        </div>
+
+        <!-- 5. International Standards Comparison -->
+        <h2>5. Perbandingan Standar Internasional</h2>
+        <div class="content-box">
+            <h3>ASME A13.1 vs BS 1710 vs ISO 14726:</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Aspek</th>
+                        <th>ASME A13.1 (USA)</th>
+                        <th>BS 1710 (UK)</th>
+                        <th>ISO 14726 (International)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Warna Utama</td>
+                        <td>8 warna standar</td>
+                        <td>14 warna (lebih detailed)</td>
+                        <td>8 warna utama + detail bands</td>
+                    </tr>
+                    <tr>
+                        <td>Fire Quenching</td>
+                        <td>RED (#FF0000)</td>
+                        <td>RED (#FF0000)</td>
+                        <td>RED (#FF0000)</td>
+                    </tr>
+                    <tr>
+                        <td>Toxic/Corrosive</td>
+                        <td>YELLOW (#FFFF00)</td>
+                        <td>YELLOW (#FFFF00)</td>
+                        <td>YELLOW (#FFFF00)</td>
+                    </tr>
+                    <tr>
+                        <td>Flammable</td>
+                        <td>BROWN (#964B00)</td>
+                        <td>BROWN + Safety Line</td>
+                        <td>BROWN (#8B4513)</td>
+                    </tr>
+                    <tr>
+                        <td>Combustible</td>
+                        <td>ORANGE (#FFA500)</td>
+                        <td>ORANGE + Safety Line</td>
+                        <td>ORANGE (#FF6600)</td>
+                    </tr>
+                    <tr>
+                        <td>Water/Safe Liquid</td>
+                        <td>GREEN (#00AA00)</td>
+                        <td>GREEN (#00AA00)</td>
+                        <td>GREEN (#00AA00)</td>
+                    </tr>
+                    <tr>
+                        <td>Compressed Gas</td>
+                        <td>BLUE (#0000FF)</td>
+                        <td>LIGHT BLUE (#87CEEB)</td>
+                        <td>LIGHT BLUE (#0080FF)</td>
+                    </tr>
+                    <tr>
+                        <td>Label Requirement</td>
+                        <td>Mandatory dengan content name</td>
+                        <td>Mandatory dengan safety line</td>
+                        <td>Mandatory dengan color band + label</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="image-placeholder">
+                <p><strong>🖼️ GAMBAR DIBUTUHKAN:</strong><br>
+                <strong>Filename:</strong> international-standards-comparison.png<br>
+                <strong>Ukuran:</strong> 800x400px<br>
+                <strong>Descripción:</strong> Visual comparison antara color coding standards: ASME A13.1, BS 1710, ISO 14726. Tunjukkan color swatches, hex codes, dan perbedaan utama antara masing-masing standar. Format grid untuk easy comparison.</p>
+            </div>
+        </div>
+
+        <!-- 6. Special Cases & Exceptions -->
+        <h2>6. Special Cases & Exceptions</h2>
+        <div class="content-box">
+            <h3>Multi-Colored Bands:</h3>
+            <p>Untuk pipa yang berisi multiple fluids dalam kondisi berbeda atau untuk special applications:</p>
+            <ul>
+                <li><strong>Dual Service Lines:</strong> Split band dengan 2 warna (50% setiap warna) untuk indicating dual service</li>
+                <li><strong>Stripes/Bands:</strong> Narrow stripes dalam color berbeda untuk additional information</li>
+            </ul>
+
+            <h3>Cryogenic Fluids:</h3>
+            <ul>
+                <li><strong>Liquid Nitrogen (LN₂):</strong> BLUE dengan additional label "CRYOGENIC"</li>
+                <li><strong>Liquid Oxygen (LOX):</strong> BLUE dengan additional label "CRYOGENIC - OXIDIZER"</li>
+                <li><strong>Special Precautions:</strong> Require insulation dan special handling procedures</li>
+            </ul>
+
+            <h3>Steam Lines:</h3>
+            <ul>
+                <li><strong>Color:</strong> BLACK sesuai ASME A13.1 standard</li>
+                <li><strong>Special Information:</strong> Label harus include operating pressure dan temperature (e.g., "50 PSI Steam, 300°F")</li>
+                <li><strong>Insulation:</strong> Pipa steam typically berinsulasi; color band dipasang di luar insulation</li>
+            </ul>
+
+            <h3>Return Lines (Balik):</h3>
+            <ul>
+                <li><strong>Cooling Water Return:</strong> Warna HIJAU sama seperti supply, tapi dengan label "RETURN" atau arrow berlawanan arah</li>
+                <li><strong>Drain Lines:</strong> Warna HITAM dengan label "DRAIN"</li>
+                <li><strong>Vent Lines:</strong> Sesuai warna konten, tapi dengan label "VENT"</li>
+            </ul>
+
+            <h3>Underground & Buried Pipes:</h3>
+            <ul>
+                <li><strong>Marker Posts:</strong> Color bands pada marker posts di atas ground untuk indicate buried pipe</li>
+                <li><strong>Depth Marking:</strong> Markings menunjukkan depth dari pipe di bawah surface</li>
+                <li><strong>Caution Signs:</strong> "CAUTION: Buried Pipe Below" dengan appropriate color</li>
+            </ul>
+        </div>
+
+        <!-- 7. Common Mistakes & Best Practices -->
+        <h2>7. Common Mistakes & Best Practices</h2>
+        <div class="content-box">
+            <h3>Common Mistakes to Avoid:</h3>
+            <ul>
+                <li>❌ Menggunakan warna yang tidak sesuai standar ASME A13.1</li>
+                <li>❌ Tidak menempatkan label di lokasi strategis (near valve, at junctions)</li>
+                <li>❌ Label dengan text terlalu kecil untuk dibaca atau visibility rendah</li>
+                <li>❌ Menggunakan faded atau unclear color yang sulit dibedakan</li>
+                <li>❌ Tidak update label saat ada perubahan dalam pipe content atau operation</li>
+                <li>❌ Menempatkan color band terlalu jauh (> 50 feet) sehingga tidak visible</li>
+                <li>❌ Menggunakan low-quality paint yang mudah hilang/fade</li>
+                <li>❌ Tidak konsisten dalam penempatan label di seluruh facility</li>
+            </ul>
+
+            <h3>Best Practices:</h3>
+            <ul>
+                <li>✅ Gunakan warna standar ASME A13.1 secara konsisten di seluruh facility</li>
+                <li>✅ Tempatkan color bands di interval 25-50 feet dan di setiap perubahan lokasi</li>
+                <li>✅ Pastikan text pada label jelas dan readable dari distance normal</li>
+                <li>✅ Gunakan high-quality, fade-resistant paint dan labels</li>
+                <li>✅ Maintain master document yang list semua pipes, contents, dan color codes</li>
+                <li>✅ Train semua staff tentang color coding system dan hazard identification</li>
+                <li>✅ Perform regular inspection dan maintenance untuk ensure visibility</li>
+                <li>✅ Update documentation saat ada changes dalam piping system atau contents</li>
+                <li>✅ Coordinate color coding dengan PFD dan P&ID drawings</li>
+                <li>✅ Include color coding requirements dalam operational manuals dan procedures</li>
+            </ul>
+
+            <div class="image-placeholder">
+                <p><strong>🖼️ GAMBAR DIBUTUHKAN:</strong><br>
+                <strong>Filename:</strong> common-mistakes-guide.png<br>
+                <strong>Ukuran:</strong> 700x400px<br>
+                <strong>Descripción:</strong> Before & After comparison showing mistakes dan corrections: (1) Wrong color vs correct, (2) Faded label vs clear label, (3) Too small text vs readable text, (4) Inconsistent spacing vs proper spacing. Tunjukkan best practices untuk masing-masing case.</p>
+            </div>
+        </div>
+
+        <!-- 8. Implementation in Industrial Plants -->
+        <h2>8. Implementasi di Fasilitas Industri Nyata</h2>
+        <div class="content-box">
+            <h3>Petrochemical Plant Example:</h3>
+            <p>Sistem color coding di petrochemical plant dengan berbagai fluid types:</p>
+
+            <ul>
+                <li><strong>Feed Section:</strong>
+                    <ul>
+                        <li>🔴 RED - Fire water supply system</li>
+                        <li>🟤 BROWN - Raw crude oil feed</li>
+                        <li>🟢 GREEN - Cooling water from cooling tower</li>
+                    </ul>
+                </li>
+
+                <li><strong>Reaction Section:</strong>
+                    <ul>
+                        <li>🟢 GREEN - Hot water untuk heating reactor</li>
+                        <li>🟠 ORANGE - Fuel gas untuk furnace</li>
+                        <li>🔵 BLUE - Instrument air untuk control system</li>
+                    </ul>
+                </li>
+
+                <li><strong>Separation Section:</strong>
+                    <ul>
+                        <li>🟡 YELLOW - Caustic soda (NaOH) untuk washing</li>
+                        <li>🟢 GREEN - Quench water</li>
+                        <li>⬛ BLACK - Steam untuk reboiler</li>
+                    </ul>
+                </li>
+
+                <li><strong>Storage & Utilities:</strong>
+                    <ul>
+                        <li>🔴 RED - Fire suppression system</li>
+                        <li>🟢 GREEN - Potable water</li>
+                        <li>⬛ BLACK - Waste water drain</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="image-placeholder">
+                <p><strong>🖼️ GAMBAR DIBUTUHKAN:</strong><br>
+                <strong>Filename:</strong> industrial-plant-example.png<br>
+                <strong>Ukuran:</strong> 900x500px<br>
+                <strong>Descripción:</strong> Simplified layout petrochemical plant dengan various pipes color-coded sesuai ASME A13.1. Tunjukkan: Feed Tank (RED, GREEN), Heat Exchanger (ORANGE, GREEN), Reactor (BLUE, GREEN, YELLOW), Separator (BLACK), Recovery area. Include legend menunjukkan warna dan meaning.</p>
+            </div>
+        </div>
+
+        <!-- 9. Safety & Training -->
+        <h2>9. Safety Training & Emergency Response</h2>
+        <div class="content-box">
+            <h3>Training Requirements:</h3>
+            <ul>
+                <li><strong>All Personnel:</strong> Setiap employee yang bekerja di facility harus familiar dengan color coding system</li>
+                <li><strong>New Employees:</strong> Training mandatory sebagai bagian dari onboarding process</li>
+                <li><strong>Periodic Refresher:</strong> Refresher training setahun sekali atau saat ada system changes</li>
+                <li><strong>Emergency Responders:</strong> Fire department dan emergency personnel harus trained untuk quick identification</li>
+            </ul>
+
+            <h3>Emergency Response Procedures:</h3>
+            <ul>
+                <li><strong>Leak Identification:</strong> Color of leaking fluid immediately identify hazard level</li>
+                <li><strong>Evacuation Protocol:</strong> YELLOW (toxic) memerlukan immediate evacuation vs GREEN (water) tidak</li>
+                <li><strong>First Aid:</strong> Toxic exposure (YELLOW) memerlukan specific antidote atau treatment</li>
+                <li><strong>Cleanup & Containment:</strong> BROWN atau ORANGE (flammable) memerlukan special handling untuk prevent ignition</li>
+            </ul>
+
+            <h3>Documentation & Signage:</h3>
+            <ul>
+                <li><strong>Color Legend Posters:</strong> Dipasang di strategic locations showing semua 8 warna dan meaning</li>
+                <li><strong>Piping Diagrams:</strong> PFD dan P&ID harus annotate dengan color codes</li>
+                <li><strong>Emergency Contact Lists:</strong> Information tentang hazardous material dan emergency numbers</li>
+                <li><strong>SDS (Safety Data Sheet):</strong> Available untuk semua chemical hazards (YELLOW dan BROWN)</li>
+            </ul>
+        </div>
+
+        <!-- 10. Standar Referensi -->
+        <h2>10. Standar Internasional & Referensi Lengkap</h2>
+        <div class="content-box">
+            <h3>Primary Standards:</h3>
+            <ul>
+                <li><strong>ASME A13.1-2020:</strong> Scheme for the Identification of Piping Systems (MOST COMPREHENSIVE - Recommended)</li>
+                <li><strong>BS 1710:2014+A1:2018:</strong> Pipelines - Identification code (British Standard)</li>
+                <li><strong>ISO 14726:2015:</strong> Safety identification - Colouring of pipes and pipe fittings (International)</li>
+                <li><strong>DIN 2403:2020-08:</strong> Identification of the contents of pipes and pipe fittings (German)</li>
+            </ul>
+
+            <h3>Industry Guidelines & References:</h3>
+            <ul>
+                <li><strong>API RP 1110:</strong> Pressure Testing of Liquid Pipeline Systems</li>
+                <li><strong>OSHA 1910.97:</strong> Nonionizing Radiation (covers hazard marking)</li>
+                <li><strong>EPA Hazard Class Guide:</strong> Information tentang hazardous materials classification</li>
+                <li><strong>CCPS Process Safety Management Guidelines:</strong> Include pipe identification</li>
+            </ul>
+
+            <h3>Related Standards untuk Safety & Hazard Communication:</h3>
+            <ul>
+                <li><strong>OSHA GHS (Globally Harmonized System):</strong> Label dan hazard symbols requirement</li>
+                <li><strong>ANSI/ASSE Z590.3:</strong> Prevention through design standard</li>
+                <li><strong>ANSI/NFPA 704:</strong> Diamond marking untuk hazardous materials</li>
+            </ul>
+        </div>
+
+        <!-- 11. Checklist Implementation -->
+        <h2>11. Implementation Checklist untuk Pipeline Color Coding</h2>
+        <div class="content-box">
+            <h3>Pre-Implementation Planning:</h3>
+            <ul style="list-style-type: none; padding: 0;">
+                <li>☐ Review existing piping system dan document semua pipes dengan contents</li>
+                <li>☐ Verify compliance requirements (ASME A13.1, BS 1710, ISO 14726, atau local regulations)</li>
+                <li>☐ Create master spreadsheet listing semua pipes, contents, colors, locations</li>
+                <li>☐ Coordinate dengan Operations, Maintenance, dan Safety teams</li>
+                <li>☐ Select high-quality paint dan label materials</li>
+                <li>☐ Develop standardized label format dan text content</li>
+            </ul>
+
+            <h3>Implementation Phase:</h3>
+            <ul style="list-style-type: none; padding: 0;">
+                <li>☐ Prepare pipa surface (clean, degrease) sebelum painting</li>
+                <li>☐ Apply color bands sesuai schedule (25-50 feet interval)</li>
+                <li>☐ Apply labels dengan clear, readable text</li>
+                <li>☐ Document yang diberi warna dalam log atau database</li>
+                <li>☐ Take photos untuk verification dan future reference</li>
+                <li>☐ Update PFD dan P&ID drawings dengan color notation</li>
+            </ul>
+
+            <h3>Training & Documentation:</h3>
+            <ul style="list-style-type: none; padding: 0;">
+                <li>☐ Train semua personnel tentang color coding system</li>
+                <li>☐ Distribute color legend posters di strategic locations</li>
+                <li>☐ Post SDS untuk hazardous materials (YELLOW, BROWN)</li>
+                <li>☐ Create emergency response procedures document</li>
+                <li>☐ Include color coding info di operational manuals</li>
+                <li>☐ Conduct emergency drill dengan fire department/responders</li>
+            </ul>
+
+            <h3>Maintenance & Inspection:</h3>
+            <ul style="list-style-type: none; padding: 0;">
+                <li>☐ Schedule quarterly visual inspection dari color bands</li>
+                <li>☐ Identify faded atau damaged labels untuk repainting</li>
+                <li>☐ Update labels saat ada changes dalam pipe content atau operation</li>
+                <li>☐ Maintain inspection log dengan date dan findings</li>
+                <li>☐ Annual comprehensive audit dari seluruh system</li>
+                <li>☐ Refresher training untuk staff setiap tahun</li>
+            </ul>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>📚 EMMT Learning</h4>
+                <p>Platform pembelajaran online untuk Elemen Mesin dan Menggambar Teknik di Universitas Sriwijaya.</p>
+            </div>
+            <div class="footer-section">
+                <h4>📖 Topik Lainnya</h4>
+                <ul>
+                    <li><a href="fastener-joint.html">Fastener & Joint</a></li>
+                    <li><a href="pfd-symbols.html">PFD Symbols</a></li>
+                    <li><a href="pipe-schedule-hazop.html">Pipe & HAZOP</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>🔗 Standar Referensi</h4>
+                <ul>
+                    <li>ASME A13.1:2020</li>
+                    <li>BS 1710:2014</li>
+                    <li>ISO 14726:2015</li>
+                    <li>DIN 2403:2020</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>👤 Creator</h4>
+                <p><strong>Tiara Anisda Rahmadani</strong></p>
+                <p>NIM: 03031182530006</p>
+                <p>Teknik Kimia - Semester 2</p>
+                <p>Universitas Sriwijaya</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 EMMT Learning Platform | Universitas Sriwijaya</p>
+            <p>Edukasi untuk masa depan engineer yang lebih baik</p>
+        </div>
+    </footer>
+</body>
+</html>
