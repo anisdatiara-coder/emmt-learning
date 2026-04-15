@@ -2,15 +2,15 @@
 EMMT Learning - Elemen Mesin dan Menggambar Teknik Platform
 # 📚 EMMT Learning - Elemen Mesin dan Menggambar Teknik
 
-**Platform Pembelajaran Online untuk Mahasiswa Teknik Kimia Universitas Sriwijaya**
+**Platform Pembelajaran Blog Online sebagai Tugas Mahasiswa Teknik Kimia Universitas Sriwijaya**
 
 ## 👤 Creator Info
 
 - **Nama:** Tiara Anisda Rahmadani
 - **NIM:** 03031182530006
-- **Program:** Teknik Kimia - Semester 2
+- **Departemen:** Teknik Kimia - Semester 2
 - **Universitas:** Universitas Sriwijaya
-- **Tahun:** 2024
+- **Tahun:** 2026
 
 ---
 
