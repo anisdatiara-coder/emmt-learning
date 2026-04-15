@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PFD Symbols & Legend - EMMT Learning</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">📚 EMMT Learning</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="fastener-joint.html" class="nav-link">Fastener & Joint</a></li>
+                <li><a href="pfd-symbols.html" class="nav-link active">PFD Symbols</a></li>
+                <li><a href="pipe-schedule-hazop.html" class="nav-link">Pipe & HAZOP</a></li>
+                <li><a href="pipeline-colors.html" class="nav-link">Pipeline Colors</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <section class="content-section">
+        <h1>📊 PFD Symbols & Legend</h1>
+        <p><strong>Last Updated:</strong> 2024 | <strong>Level:</strong> Intermediate | <strong>Est. Reading Time:</strong> 50 minutes</p>
+
+        <!-- 1. Pengenalan PFD -->
+        <h2>1. Pengenalan Process Flow Diagram (PFD)</h2>
+        <div class="content-box">
+            <h3>Apa itu PFD?</h3>
+            <p>Process Flow Diagram (PFD) adalah representasi grafis dari sistem proses yang menunjukkan aliran material, equipment utama, instrumentasi, dan control systems dalam suatu operasi. PFD adalah dokumen teknik fundamental dalam industri petrochemical, oil & gas, manufacturing, dan chemical processing.</p>
+
+            <h3>Tujuan PFD:</h3>
+            <ul>
+                <li><strong>Komunikasi:</strong> Menyampaikan proses secara visual kepada semua stakeholder (engineer, operator, contractor)</li>
+                <li><strong>Desain:</strong> Dasar untuk detailed engineering dan equipment selection</li>
+                <li><strong>Operasi:</strong> Panduan untuk operator dalam menjalankan proses</li>
+                <li><strong>Maintenance:</strong> Referensi untuk maintenance crew dalam troubleshooting</li>
+                <li><strong>Safety:</strong> Identifikasi hazard dan critical control points</li>
+                <li><strong>Efficiency:</strong> Analisis dan optimisasi proses</li>
+            </ul>
+
+            <h3>Standar PFD Internasional:</h3>
+            <ul>
+                <li><strong>ISO 10628:</strong> Diagram symbols for process industry - Part 1 (Simbol umum), Part 2 (Specific symbols)</li>
+                <li><strong>ANSI/ISA-5.1:</strong> Instrumentation Symbols and Identification (American standard)</li>
+                <li><strong>DIN 2481:</strong> Diagram symbols for process engineering (German standard)</li>
+                <li><strong>API RP 14C:</strong> Analysis, Design, Installation and Testing of Safety Systems (untuk oil & gas)</li>
+            </ul>
+        </div>
+
+        <!-- 2. Valve Symbols -->
+        <h2>2. Valve Symbols (Simbol Katup)</h2>
+        <div class="content-box">
+            <p><strong>Definisi:</strong> Valve (katup) adalah perangkat yang mengontrol aliran fluid (liquid atau gas) dalam sistem piping. Setiap tipe valve memiliki fungsi dan simbol berbeda di PFD.</p>
+
+            <h3>Jenis-Jenis Valve dan Simbolnya:</h3>
+
+            <h4>a. Gate Valve (Katup Gerbang)</h4>
+            <p><strong>Fungsi:</strong> On-off service, full flow passing dengan minimal pressure drop</p>
+            <p><strong>Simbol:</strong> Persegi dengan garis diagonal atau wedge di tengahnya</p>
+            <p><strong>Aplikasi:</strong> Isolation valve, manual control, tidak untuk throttling</p>
+            <p><strong>Keuntungan:</strong> Low cost, low pressure drop, fully open or fully closed</p>
+            <p><strong>Kerugian:</strong> Tidak cocok untuk throttling, erosion risk dengan slurry</p>
+
+            <h4>b. Globe Valve (Katup Bola)</h4>
+            <p><strong>Fungsi:</strong> Throttling control, precise flow regulation</p>
+            <p><strong>Simbol:</strong> Lingkaran dengan garis horizontal atau wedge di tengahnya</p>
+            <p><strong>Aplikasi:</strong> Flow control, pressure regulation, precise adjustment</p>
+            <p><strong>Keuntungan:</strong> Excellent throttling ability, good controlling characteristics</p>
+            <p><strong>Kerugian:</strong> Higher pressure drop, more expensive, slower operation</p>
+
+            <h4>c. Check Valve (Katup Cek/Anti-Balik)</h4>
+            <p><strong>Fungsi:</strong> Prevent backflow, allow flow in one direction only</p>
+            <p><strong>Simbol:</strong> Lingkaran dengan garis diagonal atau arrow menunjuk arah aliran</p>
+            <p><strong>Aplikasi:</strong> Discharge line dari pump, prevent siphoning, safety protection</p>
+            <p><strong>Keuntungan:</strong> Automatic operation, no external control needed</p>
+            <p><strong>Kerugian:</strong> Can cause pressure surge (water hammer) saat sudden closure</p>
+
+            <h4>d. Ball Valve (Katup Bola Bulat)</h4>
+            <p><strong>Fungsi:</strong> Quick on-off service, minimal space requirement</p>
+            <p><strong>Simbol:</strong> Lingkaran dengan bola bulat di tengahnya</p>
+            <p><strong>Aplikasi:</strong> Isolation, general purpose, residential/commercial applications</p>
+            <p><strong>Keuntungan:</strong> Fast operation (1/4 turn), reliable, compact size</p>
+            <p><strong>Kerugian:</strong> Not suitable untuk throttling continuously, potential leakage</p>
+
+            <h4>e. Butterfly Valve (Katup Kupu-kupu)</h4>
+            <p><strong>Fungsi:</strong> On-off and throttling control, large diameter service</p>
+            <p><strong>Simbol:</strong> Lingkaran dengan garis vertikal dan disk representation</p>
+            <p><strong>Aplikasi:</strong> Large diameter lines, high flow applications, air/gas</p>
+            <p><strong>Keuntungan:</strong> Compact, lightweight, inexpensive, low pressure drop</p>
+            <p><strong>Kerugian:</strong> Not for very high pressure, potential leakage at low flow</p>
+
+            <h4>f. Relief Valve (Katup Pengaman)</h4>
+            <p><strong>Fungsi:</strong> Pressure relief, overpressure protection</p>
+            <p><strong>Simbol:</strong> Lingkaran dengan garis diagonal dan spring symbol</p>
+            <p><strong>Aplikasi:</strong> System protection, pressure safety device, mandatory equipment</p>
+            <p><strong>Keuntungan:</strong> Automatic operation, critical safety component</p>
+            <p><strong>Kerugian:</strong> Requires regular maintenance dan testing</p>
+
+            <h4>g. Control Valve (Katup Kontrol)</h4>
+            <p><strong>Fungsi:</strong> Automatic process control based on instrument signal</p>
+            <p><strong>Simbol:</strong> Lingkaran dengan actuator (simbol pneumatic/electric) di atasnya</p>
+            <p><strong>Aplikasi:</strong> Process optimization, maintain setpoint, automated systems</p>
+            <p><strong>Keuntungan:</strong> Precise control, automated operation, better efficiency</p>
+            <p><strong>Kerugian:</strong> More complex, requires instrumentation dan control logic</p>
+
+            <div class="image-placeholder">
+                <p><strong>🖼️ GAMBAR DIBUTUHKAN:</strong><br>
+                <strong>Filename:</strong> valve-symbols.png<br>
+                <strong>Ukuran:</strong> 700x400px<br>
+                <strong>Deskripsi:</strong> Simbol PFD untuk 7 jenis valve: Gate, Globe, Check, Ball, Butterfly, Relief, Control Valve. Tunjukkan simbol, nama, dan single-line diagram representation.</p>
+            </div>
+        </div>
+
+        <!-- 3. Pump Symbols -->
+        <h2>3. Pump Symbols (Simbol Pompa)</h2>
+        <div class="content-box">
+            <p><strong>Definisi:</strong> Pump adalah mesin yang mengubah energi mekanik menjadi energi fluida untuk mengalirkan liquid atau gas.</p>
+
+            <h3>Jenis-Jenis Pump dan Simbolnya:</h3>
+
+            <h4>a. Centrifugal Pump</h4>
+            <p><strong>Fungsi:</strong> Transfer large volume of liquid at moderate pressure</p>
+            <p><strong>Simbol:</strong> Lingkaran dengan curved impeller atau arrow menunjuk arah aliran</p>
+            <p><strong>Aplikasi:</strong> Circulation, cooling water, feedstock transfer, general purpose</p>
+            <p><strong>Keuntungan:</strong> Simple design, reliable, low cost, large capacity</p>
+            <p><strong>Kerugian:</strong> Cavitation risk, head sensitive terhadap viscosity</p>
+
+            <h4>b. Positive Displacement Pump</h4>
+            <p><strong>Fungsi:</strong> Transfer fluid at high pressure or with constant flow rate</p>
+            <p><strong>Simbol:</strong> Lingkaran dengan arrow atau gear representation</p>
+            <p><strong>Tipe:</strong> Gear pump, screw pump, reciprocating pump, peristaltic pump</p>
+            <p><strong>Aplikasi:</strong> High viscosity liquid, metering, precise dosing</p>
+            <p><strong>Keuntungan:</strong> Constant flow regardless pressure, high pressure capability</p>
+            <p><strong>Kerugian:</strong> More complex, higher cost, noise level</p>
+
+            <h4>c. Turbine Pump / Vertical Turbine Pump</h4>
+            <p><strong>Fungsi:</strong> Lift water from deep well atau sumpit</p>
+            <p><strong>Simbol:</strong> Vertical line dengan multiple stages</p>
+            <p><strong>Aplikasi:</strong> Groundwater extraction, vertical mounting</p>
+
+            <h4>d. Submersible Pump</h4>
+            <p><strong>Fungsi:</strong> Pump yang terendam di dalam liquid</p>
+            <p><strong>Simbol:</strong> Persegi dengan pump symbol di dalam</p>
+            <p><strong>Aplikasi:</strong> Well pumping, sump pumping, underwater applications</p>
+
+            <div class="image-placeholder">
+                <p><strong>🖼️ GAMBAR DIBUTUHKAN:</strong><br>
+                <strong>Filename:</strong> pump-symbols.png<br>
+                <strong>Ukuran:</strong> 600x300px<br>
+                <strong>Deskripsi:</strong> Simbol PFD untuk berbagai pump: Centrifugal, Positive Displacement (Gear, Screw, Reciprocating), Turbine, Submersible. Tunjukkan simbol dan karakteristik utama.</p>
+            </div>
+        </div>
+
+        <!-- 4. Equipment Symbols -->
+        <h2>4. Equipment Symbols (Simbol Peralatan Utama)</h2>
+        <div class="content-box">
+            <p><strong>Definisi:</strong> Equipment adalah unit operasi utama dalam proses yang melakukan transformasi atau pemisahan material.</p>
+
+            <h3>Jenis-Jenis Equipment dan Simbolnya:</h3>
+
+            <h4>a. Vessel / Tank (Bejana/Tangki)</h4>
+            <p><strong>Fungsi:</strong> Storage atau surge tank untuk liquid atau gas</p>
+            <p><strong>Simbol:</strong> Persegi/cylinder vertikal atau horizontal</p>
+            <p><strong>Aplikasi:</strong> Storage, buffer, accumulator</p>
+
+            <h4>b. Heat Exchanger (Penukar Panas)</h4>
+            <p><strong>Fungsi:</strong> Transfer heat antara dua fluid streams</p>
+            <p><strong>Simbol:</strong> Persegi dengan garis-garis horizontal (shell & tube) atau kotak berlapis</p>
+            <p><strong>Tipe:</strong> Shell & tube, plate, air cooler, condenser, reboiler</p>
+
+            <h4>c. Distillation Column / Fractionator</h4>
+            <p><strong>Fungsi:</strong> Separate fluid mixture berdasarkan volatility (boiling point)</p>
+            <p><strong>Simbol:</strong> Lingkaran besar vertikal dengan trays di dalamnya atau garis-garis horizontal</p>
+            <p><strong>Aplikasi:</strong> Crude oil refining, separation process</p>
+
+            <h4>d. Reactor (Reaktor)</h4>
+            <p><strong>Fungsi:</strong> Chemical reaction vessel untuk konversi reaktan menjadi produk</p>
+            <p><strong>Simbol:</strong> Persegi dengan tanda X atau chemical reaction symbol</p>
+            <p><strong>Tipe:</strong> CSTR (Continuous Stirred Tank Reactor), PFR (Plug Flow Reactor), Batch</p>
+
+            <h4>e. Compressor / Blower</h4>
+            <p><strong>Fungsi:</strong> Increase pressure atau flow dari gas</p>
+            <p><strong>Simbol:</strong> Lingkaran dengan double triangle atau fan blade</p>
+            <p><strong>Aplikasi:</strong> Air supply, gas compression, pneumatic systems</p>
+
+            <h4>f. Separator (Separator Dua Fasa)</h4>
+            <p><strong>Fungsi:</strong> Separate liquid dan gas dari mixed stream</p>
+            <p><strong>Simbol:</strong> Lingkaran atau oval dengan horizontal line (liquid-gas interface)</p>
+            <p><strong>Aplikasi:</strong> Flash separator, oil & gas separator, knock-out drum</p>
+
+            <div class="image-placeholder">
+                <p><strong>🖼️ GAMBAR DIBUTUHKAN:</strong><br>
+                <strong>Filename:</strong> equipment-symbols.png<br>
+                <strong>Ukuran:</strong> 800x400px<br>
+                <strong>Deskripsi:</strong> Simbol PFD untuk equipment utama: Vessel, Heat Exchanger, Distillation Column, Reactor, Compressor, Separator. Tunjukkan simbol standard ISO 10628.</p>
+            </div>
+        </div>
+
+        <!-- 5. Flange & Connection Symbols -->
+        <h2>5. Flange & Connection Symbols (Simbol Sambungan Pipa)</h2>
+        <div class="content-box">
+            <p><strong>Definisi:</strong> Sambungan pipa menghubungkan berbagai bagian sistem dan mengalihkan aliran.</p>
+
+            <h3>Jenis-Jenis Connection dan Simbolnya:</h3>
+
+            <h4>a. Flange (Flans)</h4>
+            <p><strong>Fungsi:</strong> Connection point, memudahkan maintenance dan replacement</p>
+            <p><strong>Simbol:</strong> Garis dengan 2 lingkaran kecil di perpotongnya atau simbol khusus flange</p>
+            <p><strong>Aplikasi:</strong> Equipment connection, valve connections, pressure boundary</p>
+
+            <h4>b. Tee (Sambungan T)</h4>
+            <p><strong>Fungsi:</strong> Split atau combine flow di 3 arah (T-shaped)</p>
+            <p><strong>Simbol:</strong> Garis dengan branch ke arah perpendicular</p>
+            <p><strong>Aplikasi:</strong> Stream splitting, combining, bypass</p>
+
+            <h4>c. Elbow (Belokan)</h4>
+            <p><strong>Fungsi:</strong> Change direction of flow 90° atau 45°</p>
+            <p><strong>Simbol:</strong> Garis bengkok dengan sudut sesuai (90° atau 45°)</p>
+            <p><strong>Aplikasi:</strong> Route piping around obstacles, change elevation</p>
+
+            <h4>d. Reducer (Pereduksi/Adapter)</h4>
+            <p><strong>Fungsi:</strong> Change pipe diameter dari besar ke kecil (atau sebaliknya)</p>
+            <p><strong>Simbol:</strong> Garis dengan taper/berkurang di tengah atau persegi kecil</p>
+            <p><strong>Aplikasi:</strong> Connect different pipe sizes, equipment connection</p>
+
+            <h4>e. Coupling / Union (Kopling/Union)</h4>
+            <p><strong>Fungsi:</strong> Connect two pipes of same size, removable connection</p>
+            <p><strong>Simbol:</strong> Garis dengan small coupling symbol di tengah</p>
+            <p><strong>Aplikasi:</strong> Removable connection, maintenance points</p>
+
+            <div class="image-placeholder">
+                <p><strong>🖼️ GAMBAR DIBUTUHKAN:</strong><br>
+                <strong>Filename:</strong> connection-symbols.png<br>
+                <strong>Ukuran:</strong> 600x300px<br>
+                <strong>Deskripsi:</strong> Simbol PFD untuk sambungan pipa: Flange, Tee, Elbow (90° dan 45°), Reducer, Coupling. Tunjukkan simbol simple line dengan jelas.</p>
+            </div>
+        </div>
+
+        <!-- 6. Line Conventions -->
+        <h2>6. Line Conventions (Konvensi Garis)</h2>
+        <div class="content-box">
+            <p><strong>Definisi:</strong> Berbagai tipe garis menunjukkan jenis aliran atau koneksi dalam PFD.</p>
+
+            <h3>Jenis-Jenis Line:</h3>
+
+            <h4>a. Process Line (Garis Proses)</h4>
+            <p><strong>Gaya:</strong> Solid line tebal atau normal thickness</p>
+            <p><strong>Fungsi:</strong> Main process flow (material yang sedang diproses)</p>
+            <p><strong>Warna Standard:</strong> Hitam atau sesuai flow direction</p>
+
+            <h4>b. Utility Line (Garis Utilitas)</h4>
+            <p><strong>Gaya:</strong> Dashed line (- - - -) atau dotted line</p>
+            <p><strong>Fungsi:</strong> Supporting services (cooling water, steam, air, fuel)</p>
+            <p><strong>Aplikasi:</strong> Cooling water, heating steam, instrument air, fuel gas</p>
+
+            <h4>c. Instrument Line (Garis Instrumentasi)</h4>
+            <p><strong>Gaya:</strong> Dotted line dengan tanda khas (• - • -) atau fine line</p>
+            <p><strong>Fungsi:</strong> Signal transmission (tidak material flow, hanya signal)</p>
+            <p><strong>Aplikasi:</strong> Pressure signal, temperature signal, level signal</p>
+
+            <h4>d. Drain Line (Garis Pembuangan)</h4>
+            <p><strong>Gaya:</strong> Garis dengan designation "D" atau special marking</p>
+            <p><strong>Fungsi:</strong> Liquid waste atau drain material</p>
+
+            <h4>e. Vent Line (Garis Ventilasi)</h4>
+            <p><strong>Gaya:</strong> Garis dengan designation "V" atau special marking</p>
+            <p><strong>Fungsi:</strong> Gas release ke atmosphere atau flare</p>
+
+            <div class="image-placeholder">
+                <p><strong>🖼️ GAMBAR DIBUTUHKAN:</strong><br>
+                <strong>Filename:</strong> line-conventions.png<br>
+                <strong>Ukuran:</strong> 700x300px<br>
+                <strong>Deskripsi:</strong> Jenis garis dalam PFD: Process Line (solid), Utility Line (dashed), Instrument Line (dotted), Drain (D), Vent (V). Tunjukkan visual comparison dengan jelas.</p>
+            </div>
+        </div>
+
+        <!-- 7. Instrumentation Symbols -->
+        <h2>7. Instrumentation Symbols (Simbol Alat Ukur)</h2>
+        <div class="content-box">
+            <p><strong>Definisi:</strong> Instrumen digunakan untuk mengukur parameter proses dan feedback control system.</p>
+
+            <h3>Jenis-Jenis Instrumen dan Simbolnya:</h3>
+
+            <h4>a. Pressure Gauge (PI - Pressure Indicator)</h4>
+            <p><strong>Simbol:</strong> Lingkaran dengan "PI" atau "P" di dalamnya</p>
+            <p><strong>Fungsi:</strong> Measure dan display tekanan sistem</p>
+
+            <h4>b. Temperature Sensor (TI - Temperature Indicator)</h4>
+            <p><strong>Simbol:</strong> Lingkaran dengan "TI" atau "T" di dalamnya</p>
+            <p><strong>Fungsi:</strong> Measure dan display temperature</p>
+
+            <h4>c. Flow Meter (FI - Flow Indicator)</h4>
+            <p><strong>Simbol:</strong> Lingkaran dengan "FI" atau "F" di dalamnya</p>
+            <p><strong>Fungsi:</strong> Measure aliran rate material</p>
+
+            <h4>d. Level Indicator (LI - Level Indicator)</h4>
+            <p><strong>Simbol:</strong> Lingkaran dengan "LI" atau "L" di dalamnya</p>
+            <p><strong>Fungsi:</strong> Monitor level liquid dalam tank</p>
+
+            <h4>e. Analyzer (AI - Analyzer Indicator)</h4>
+            <p><strong>Simbol:</strong> Lingkaran dengan "AI" atau "A" di dalamnya</p>
+            <p><strong>Fungsi:</strong> Analyze composition atau quality parameter</p>
+
+            <h4>f. Control Valve dengan Controller (FC, TC, LC, PC)</h4>
+            <p><strong>Simbol:</strong> Lingkaran dengan kode fungsi (FC untuk Flow Control, TC untuk Temperature Control, dll)</p>
+            <p><strong>Fungsi:</strong> Automatic process control berdasarkan setpoint</p>
+
+            <div class="image-placeholder">
+                <p><strong>🖼️ GAMBAR DIBUTUHKAN:</strong><br>
+                <strong>Filename:</strong> instrument-symbols.png<br>
+                <strong>Ukuran:</strong> 700x400px<br>
+                <strong>Deskripsi:</strong> Simbol instrument: PI (Pressure), TI (Temperature), FI (Flow), LI (Level), AI (Analyzer), FC (Flow Control), TC (Temperature Control). Tunjukkan lingkaran dengan kode internal.</p>
+            </div>
+        </div>
+
+        <!-- 8. Special Symbols -->
+        <h2>8. Special Symbols & Notations (Simbol Khusus)</h2>
+        <div class="content-box">
+            <h3>Simbol Tambahan Penting:</h3>
+
+            <h4>a. Filter (Penyaring)</h4>
+            <p><strong>Simbol:</strong> Persegi dengan X atau simbol khusus filter</p>
+            <p><strong>Fungsi:</strong> Remove solid particles dari fluid</p>
+
+            <h4>b. Strainer (Penyaring Kasar)</h4>
+            <p><strong>Simbol:</strong> Persegi dengan garis parallel atau mesh pattern</p>
+            <p><strong>Fungsi:</strong> Remove large particles sebelum equipment sensitif</p>
+
+            <h4>c. Knockout Drum / Demister</h4>
+            <p><strong>Simbol:</strong> Silinder horizontal dengan demister packing</p>
+            <p><strong>Fungsi:</strong> Remove liquid droplets dari gas stream</p>
+
+            <h4>d. Accumulator (Akumulator)</h4>
+            <p><strong>Simbol:</strong> Silinder dengan partition line atau special marking</p>
+            <p><strong>Fungsi:</strong> Store fluid under pressure</p>
+
+            <h4>e. Flash Evaporator (Penguap Flash)</h4>
+            <p><strong>Simbol:</strong> Vessel dengan heater indication</p>
+            <p><strong>Fungsi:</strong> Rapid evaporation dengan pressure reduction</p>
+
+            <h3>Flow Direction Arrows:</h3>
+            <ul>
+                <li><strong>→</strong> Arrow menunjukkan direction of flow</li>
+                <li><strong>Labeling:</strong> Setiap aliran diberi label material, temperature, pressure</li>
+                <li><strong>Stream Number:</strong> Nomor stream untuk referensi di mass balance</li>
+            </ul>
+        </div>
+
+        <!-- 9. Complete PFD Legend -->
+        <h2>9. Complete PFD Legend & Reference Table</h2>
+        <div class="content-box">
+            <p>Tabel lengkap semua simbol PFD standar ISO 10628 dan ANSI/ISA-5.1:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Simbol</th>
+                        <th>Nama</th>
+                        <th>Fungsi Utama</th>
+                        <th>Standar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Square</td>
+                        <td>Gate Valve</td>
+                        <td>On-off service</td>
+                        <td>ISO 10628</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Circle</td>
+                        <td>Globe Valve</td>
+                        <td>Flow control/throttling</td>
+                        <td>ISO 10628</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Circle with arrow</td>
+                        <td>Check Valve</td>
+                        <td>Prevent backflow</td>
+                        <td>ISO 10628</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Circle</td>
+                        <td>Ball Valve</td>
+                        <td>Quick on-off</td>
+                        <td>ISO 10628</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Circle with disc</td>
+                        <td>Butterfly Valve</td>
+                        <td>Large diameter service</td>
+                        <td>ISO 10628</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Circle with spring</td>
+                        <td>Relief Valve</td>
+                        <td>Pressure protection</td>
+                        <td>ISO 10628</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Circle + actuator</td>
+                        <td>Control Valve</td>
+                        <td>Automatic process control</td>
+                        <td>ISO 10628</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Circle</td>
+                        <td>Centrifugal Pump</td>
+                        <td>Large volume transfer</td>
+                        <td>ISO 10628</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Circle with arrow</td>
+                        <td>Positive Displacement Pump</td>
+                        <td>Constant flow/high pressure</td>
+                        <td>ISO 10628</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Rectangle</td>
+                        <td>Vessel/Tank</td>
+                        <td>Storage/buffer</td>
+                        <td>ISO 10628</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>Rectangle with lines</td>
+                        <td>Heat Exchanger</td>
+                        <td>Heat transfer</td>
+                        <td>ISO 10628</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>Large circle/oval</td>
+                        <td>Distillation Column</td>
+                        <td>Separation by volatility</td>
+                        <td>ISO 10628</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>Rectangle with X</td>
+                        <td>Reactor</td>
+                        <td>Chemical reaction</td>
+                        <td>ISO 10628</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>Circle with lines</td>
+                        <td>Compressor</td>
+                        <td>Gas compression</td>
+                        <td>ISO 10628</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>Circle with line</td>
+                        <td>Separator</td>
+                        <td>Liquid-gas separation</td>
+                        <td>ISO 10628</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="image-placeholder">
+                <p><strong>🖼️ GAMBAR DIBUTUHKAN:</strong><br>
+                <strong>Filename:</strong> complete-pfd-legend.png<br>
+                <strong>Ukuran:</strong> 1000x600px<br>
+                <strong>Deskripsi:</strong> Tabel visual lengkap PFD symbols dengan gambar simbol, nama, dan deskripsi singkat untuk setiap symbol. Format landscape untuk readability optimal.</p>
+            </div>
+        </div>
+
+        <!-- 10. Example PFD Drawing -->
+        <h2>10. Contoh PFD Drawing Industri Nyata</h2>
+        <div class="content-box">
+            <p>Contoh penggunaan simbol-simbol PFD dalam sistem proses nyata:</p>
+
+            <h3>Sistem Pump-Heat Exchanger-Separator (Contoh Sederhana):</h3>
+            <ul>
+                <li><strong>Feed Tank:</strong> Reservoir initial feedstock</li>
+                <li><strong>Pump P-101:</strong> Centrifugal pump untuk circulate fluid</li>
+                <li><strong>Control Valve V-102:</strong> Regulate flow rate dengan flow controller</li>
+                <li><strong>Heat Exchanger E-101:</strong> Increase temperature fluid</li>
+                <li><strong>Reactor R-101:</strong> Main reaction vessel</li>
+                <li><strong>Separator V-103:</strong> Separate product dari vapor</li>
+                <li><strong>Instrumentation:</strong> PI, TI, FI, LI distributed di critical points</li>
+            </ul>
+
+            <div class="image-placeholder">
+                <p><strong>🖼️ GAMBAR DIBUTUHKAN:</strong><br>
+                <strong>Filename:</strong> example-pfd-drawing.png<br>
+                <strong>Ukuran:</strong> 900x600px<br>
+                <strong>Deskripsi:</strong> Contoh PFD lengkap dari industri petrochemical/chemical showing: Feed Tank → Pump → Valve → Heat Exchanger → Reactor → Separator → Product Tank. Tunjukkan semua simbol, instrument, dan labeling.</p>
+            </div>
+        </div>
+
+        <!-- 11. PFD Best Practices -->
+        <h2>11. Best Practices dalam Membuat PFD</h2>
+        <div class="content-box">
+            <h3>Standar Penggambaran PFD:</h3>
+            <ul>
+                <li><strong>Konsistensi Simbol:</strong> Gunakan simbol standar ISO 10628 atau ANSI/ISA-5.1 secara konsisten</li>
+                <li><strong>Line Weight:</strong> Tebal garis berbeda untuk process line (tebal) dan utility line (tipis)</li>
+                <li><strong>Flow Direction:</strong> Arrow menunjukkan arah aliran dari kiri ke kanan atau atas ke bawah</li>
+                <li><strong>Equipment Labeling:</strong> Setiap equipment diberi tag unik (P-101, E-101, V-101, dll)</li>
+                <li><strong>Stream Numbering:</strong> Setiap aliran diberi nomor untuk mass balance reference</li>
+                <li><strong>Labeling Information:</strong> Cantumkan T, P, composition, atau key properties pada stream penting</li>
+                <li><strong>Instrument Location:</strong> Instrument dipasang di lokasi representatif (flange atau direct)</li>
+                <li><strong>Control Logic:</strong> Tunjukkan setpoint dan control strategy untuk automated control</li>
+            </ul>
+
+            <h3>Common Mistakes to Avoid:</h3>
+            <ul>
+                <li>❌ Menggunakan simbol non-standar atau custom yang tidak jelas</li>
+                <li>❌ Tidak menunjukkan flow direction dengan arrow</li>
+                <li>❌ Labeling yang tidak lengkap atau ambigu</li>
+                <li>❌ Tidak membedakan process line dari utility line</li>
+                <li>❌ Menempatkan instrument di lokasi tidak representatif</li>
+                <li>❌ Tidak menunjukkan bypass atau relief valve</li>
+                <li>❌ Terlalu banyak detail dalam satu diagram (buat separate drawings)</li>
+            </ul>
+
+            <h3>Software untuk Menggambar PFD:</h3>
+            <ul>
+                <li><strong>Visio:</strong> Microsoft Visio dengan Stencil PFD built-in (professional)</li>
+                <li><strong>AutoCAD:</strong> Autodesk AutoCAD dengan custom PFD library</li>
+                <li><strong>Plant Designer:</strong> Software khusus seperti AVEVA (former PDMS), PTC Creo</li>
+                <li><strong>Open Source:</strong> Lucidchart, Draw.io dengan PFD templates</li>
+                <li><strong>Engineering Software:</strong> ASPEN HYSYS, PRO/II untuk process simulation dengan PFD generation</li>
+            </ul>
+        </div>
+
+        <!-- 12. Standar Referensi -->
+        <h2>12. Standar Internasional & Referensi</h2>
+        <div class="content-box">
+            <ul>
+                <li><strong>ISO 10628-1:</strong> Diagram symbols for process industry - Part 1: Graphical symbols for general use</li>
+                <li><strong>ISO 10628-2:</strong> Diagram symbols for process industry - Part 2: Graphical symbols for specific equipment</li>
+                <li><strong>ANSI/ISA-5.1:</strong> Instrumentation Symbols and Identification (American standard)</li>
+                <li><strong>DIN 2481:</strong> Diagram symbols for process engineering (German standard)</li>
+                <li><strong>API RP 14C:</strong> Analysis, Design, Installation and Testing of Safety Systems for Offshore Production Facilities</li>
+                <li><strong>ASME B31.3:</strong> Process Piping (references PFD dalam design documentation)</li>
+            </ul>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>📚 EMMT Learning</h4>
+                <p>Platform pembelajaran online untuk Elemen Mesin dan Menggambar Teknik di Universitas Sriwijaya.</p>
+            </div>
+            <div class="footer-section">
+                <h4>📖 Topik Lainnya</h4>
+                <ul>
+                    <li><a href="fastener-joint.html">Fastener & Joint</a></li>
+                    <li><a href="pipe-schedule-hazop.html">Pipe & HAZOP</a></li>
+                    <li><a href="pipeline-colors.html">Pipeline Colors</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>🔗 Standar Referensi</h4>
+                <ul>
+                    <li>ISO 10628</li>
+                    <li>ANSI/ISA-5.1</li>
+                    <li>DIN 2481</li>
+                    <li>API RP 14C</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>👤 Creator</h4>
+                <p><strong>Tiara Anisda Rahmadani</strong></p>
+                <p>NIM: 03031182530006</p>
+                <p>Teknik Kimia - Semester 2</p>
+                <p>Universitas Sriwijaya</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 EMMT Learning Platform | Universitas Sriwijaya</p>
+            <p>Edukasi untuk masa depan engineer yang lebih baik</p>
+        </div>
+    </footer>
+</body>
+</html>
