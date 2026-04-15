@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fastener, Joint & Support - EMMT Learning</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">📚 EMMT Learning</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="fastener-joint.html" class="nav-link active">Fastener & Joint</a></li>
+                <li><a href="pfd-symbols.html" class="nav-link">PFD Symbols</a></li>
+                <li><a href="pipe-schedule-hazop.html" class="nav-link">Pipe & HAZOP</a></li>
+                <li><a href="pipeline-colors.html" class="nav-link">Pipeline Colors</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <section class="content-section">
+        <h1>🔩 Fastener, Joint & Support</h1>
+        <p><strong>Last Updated:</strong> 2024 | <strong>Level:</strong> Intermediate | <strong>Est. Reading Time:</strong> 45 minutes</p>
+
+        <!-- 1. Definisi dan Pengertian -->
+        <h2>1. Definisi dan Pengertian</h2>
+        <div class="content-box">
+            <h3>Apa itu Fastener?</h3>
+            <p>Fastener (pengikat) adalah elemen mesin yang digunakan untuk menghubungkan dua atau lebih komponen secara non-permanen. Fastener memungkinkan perakitan, pemeliharaan, dan penggantian komponen menjadi lebih mudah dibandingkan dengan penyambungan permanen seperti pengelasan.</p>
+            
+            <h3>Perbedaan Fastener vs Welding</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Aspek</th>
+                        <th>Fastener</th>
+                        <th>Welding</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sifat Sambungan</td>
+                        <td>Tidak Permanen (Removable)</td>
+                        <td>Permanen (Non-removable)</td>
+                    </tr>
+                    <tr>
+                        <td>Kemudahan Perbaikan</td>
+                        <td>Mudah, bisa dibongkar</td>
+                        <td>Sulit, perlu dipotong/diperbaiki</td>
+                    </tr>
+                    <tr>
+                        <td>Waktu Perakitan</td>
+                        <td>Cepat, hanya perlu sekrup/baut</td>
+                        <td>Lama, memerlukan proses termal</td>
+                    </tr>
+                    <tr>
+                        <td>Ketelitian Sambungan</td>
+                        <td>Lebih toleran terhadap gap</td>
+                        <td>Memerlukan persiapan detail</td>
+                    </tr>
+                    <tr>
+                        <td>Biaya</td>
+                        <td>Lebih ekonomis untuk produksi kecil</td>
+                        <td>Ekonomis untuk produksi besar</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="image-placeholder">
+                <p><strong>🖼️ GAMBAR DIBUTUHKAN:</strong><br>
+                <strong>Filename:</strong> fastener-vs-welding.png<br>
+                <strong>Ukuran:</strong> 600x400px (landscape)<br>
+                <strong>Deskripsi:</strong> Gambaran perbandingan visual antara fastener joint (bolt-nut assembly) vs welded joint. Tunjukkan komponen terpisah vs bagian yang menyatu.</p>
+            </div>
+        </div>
+
+        <!-- 2. Kegunaan Umum Fastener -->
+        <h2>2. Kegunaan Umum Fastener</h2>
+        <div class="content-box">
+            <ul>
+                <li><strong>Penyambungan Komponen:</strong> Menghubungkan parts yang terpisah menjadi satu assembly yang fungsional</li>
+                <li><strong>Pemindahan Beban:</strong> Mentransfer beban/gaya dari satu komponen ke komponen lain secara efisien melalui gesekan dan tekanan</li>
+                <li><strong>Kemudahan Maintenance:</strong> Memudahkan inspeksi dan penggantian komponen tanpa merusak bagian lain di sekitarnya</li>
+                <li><strong>Fleksibilitas Desain:</strong> Memungkinkan modifikasi desain dan upgrades di masa depan dengan cepat</li>
+                <li><strong>Standardisasi:</strong> Menggunakan komponen standar yang tersedia di pasaran dengan berbagai ukuran dan material</li>
+                <li><strong>Keselamatan:</strong> Mencegah kelepasan komponen dengan sistem lock/washer yang terbukti efektif</li>
+            </ul>
+
+            <div class="image-placeholder">
+                <p><strong>🖼️ GAMBAR DIBUTUHKAN:</strong><br>
+                <strong>Filename:</strong> fastener-applications.png<br>
+                <strong>Ukuran:</strong> 800x300px (landscape)<br>
+                <strong>Deskripsi:</strong> Contoh aplikasi fastener di 4 industri berbeda: (1) Automotive engine bolts, (2) Construction steel frame, (3) Aerospace wing assembly, (4) Heavy machinery equipment</p>
+            </div>
+        </div>
+
+        <!-- 3. Jenis-Jenis Fastener -->
+        <h2>3. Jenis-Jenis Fastener & Joint</h2>
+
+        <!-- 3.1 Bolted Joints -->
+        <h3>3.1 Bolted Joints (Sambungan Baut)</h3>
+        <div class="content-box">
+            <p><strong>Deskripsi:</strong> Sambungan menggunakan baut (bolt) dan mur (nut) untuk menjepit dua atau lebih komponen bersama-sama menjadi satu unit yang solid.</p>
+            
+            <p><strong>Prinsip Kerja:</strong></p>
+            <ol>
+                <li>Baut dimasukkan melalui lubang yang telah dibuat di kedua komponen</li>
+                <li>Mur dipasang di ujung baut yang menonjol</li>
+                <li>Baut dan mur dikencangkan dengan torque tertentu, menciptakan gaya clamping (gaya jepit)</li>
+                <li>Beban ditransfer melalui gesekan antar permukaan dan tekanan kontak yang dihasilkan oleh pre-tension</li>
+            </ol>
+
+            <p><strong>Kegunaan Spesifik:</strong></p>
+            <ul>
+                <li>Sambungan struktur (bridge, steel frame bangunan)</li>
+                <li>Perakitan mesin industri dan manufacturing equipment</li>
+                <li>Otomotif (engine block, chassis, frame)</li>
+                <li>Perpipaan dan pressure vessels di petrochemical</li>
+                <li>Equipment berat (crane, excavator, heavy machinery)</li>
+            </ul>
+
+            <p><strong>Spesifikasi Standar:</strong></p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Deskripsi</th>
+                        <th>Contoh</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Material</td>
+                        <td>Bahan pembuatan baut</td>
+                        <td>Mild Steel, Stainless Steel (304, 316), Brass, Titanium</td>
+                    </tr>
+                    <tr>
+                        <td>Diameter</td>
+                        <td>Ukuran diameter baut nominal</td>
+                        <td>M4, M6, M8, M10, M12, M16, M20, M24 (metrik)</td>
+                    </tr>
+                    <tr>
+                        <td>Grade/Kelas</td>
+                        <td>Kekuatan tarik baut (tensile strength)</td>
+                        <td>ASTM A307, Grade 5, Grade 8, Grade B7</td>
+                    </tr>
+                    <tr>
+                        <td>Panjang</td>
+                        <td>Panjang baut dari kepala hingga ujung</td>
+                        <td>20mm, 50mm, 100mm, 150mm, dll</td>
+                    </tr>
+                    <tr>
+                        <td>Pitch (Jarak Ulir)</td>
+                        <td>Jarak antar ulir dalam satu putaran</td>
+                        <td>Coarse (kasar) atau Fine (halus)</td>
+                    </tr>
+                    <tr>
+                        <td>Coating</td>
+                        <td>Lapisan proteksi korosi</td>
+                        <td>Zinc plating, Galvanized, Electroless nickel, Stainless</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="image-placeholder">
+                <p><strong>🖼️ GAMBAR DIBUTUHKAN:</strong><br>
+                <strong>Filename:</strong> bolted-joint-assembly.png<br>
+                <strong>Ukuran:</strong> 500x500px (square)<br>
+                <strong>Deskripsi:</strong> Diagram exploded view dari bolted joint assembly menunjukkan: (1) Bolt head (Hexagon, Socket Head, Carriage), (2) Shank, (3) Thread, (4) Nut, (5) Washer. Tunjukkan dimensi utama.</p>
+            </div>
+
+            <div class="image-placeholder">
+                <p><strong>🖼️ GAMBAR DIBUTUHKAN:</strong><br>
+                <strong>Filename:</strong> bolt-grades.png<br>
+                <strong>Ukuran:</strong> 600x300px<br>
+                <strong>Deskripsi:</strong> Perbandingan visual berbagai grade/kelas baut berdasarkan marking di kepala: ASTM A307, Grade 5 (3 lines), Grade 8 (6 lines), Grade B7. Tunjukkan tensile strength untuk masing-masing.</p>
+            </div>
+
+            <p><strong>Keuntungan Bolted Joints:</strong></p>
+            <ul>
+                <li>Mudah dipasang dan dilepas tanpa kerusakan</li>
+                <li>Tidak memerlukan heat treatment setelah assembly</li>
+                <li>Dapat digunakan untuk perbaikan dan maintenance di lapangan</li>
+                <li>Tersedia dalam berbagai ukuran, material, dan grade</li>
+                <li>Biaya lebih rendah dibanding permanent joining methods</li>
+            </ul>
+
+            <p><strong>Kerugian Bolted Joints:</strong></p>
+            <ul>
+                <li>Rawan terlepas jika tidak dikencangkan dengan benar atau vibration</li>
+                <li>Memerlukan torque spesifik untuk mencegah kerugian pre-tension</li>
+                <li>Lubang melalui komponen memperlemah struktur lokal</li>
+                <li>Rentan terhadap vibration-induced loosening di operasi dinamis</li>
+            </ul>
+
+            <p><strong>Standar & Referensi:</strong></p>
+            <ul>
+                <li><strong>ISO 898-1:</strong> Mechanical properties of fasteners - Bolts and screws (Metrik)</li>
+                <li><strong>ASTM A307:</strong> Specification for Carbon Steel Bolts and Studs (Imperial)</li>
+                <li><strong>ASTM A193:</strong> Specification for Alloy Steel and Stainless Steel Bolts (High-temp)</li>
+                <li><strong>DIN 931/933:</strong> Hexagon bolts and screws (Metrik standar Eropa)</li>
+                <li><strong>JIS B 1096:</strong> Japanese hexagon bolts standard</li>
+            </ul>
+        </div>
+
+        <!-- 3.2 Screwed Joints -->
+        <h3>3.2 Screwed Joints (Sambungan Sekrup)</h3>
+        <div class="content-box">
+            <p><strong>Deskripsi:</strong> Sambungan menggunakan sekrup (screw) yang langsung dipasang ke dalam material lunak atau lubang bersekrup di satu komponen, tanpa memerlukan mur.</p>
+            
+            <p><strong>Prinsip Kerja:</strong></p>
+            <ol>
+                <li>Sekrup diputar dan masuk ke dalam material atau lubang berulir</li>
+                <li>Ulir sekrup menggelincir material atau mengunci ke dalam lubang</li>
+                <li>Beban dipegang oleh gesekan antar ulir dan tekanan dari kepala sekrup</li>
+            </ol>
+
+            <p><strong>Jenis-Jenis Sekrup:</strong></p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tipe</th>
+                        <th>Kegunaan</th>
+                        <th>Material Target</th>
+                        <th>Karakteristik</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Machine Screw</strong></td>
+                        <td>Lubang pre-drilled bersekrup</td>
+                        <td>Metal, plastic</td>
+                        <td>Presisi tinggi, metrik</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Wood Screw</strong></td>
+                        <td>Kayu, material lunak</td>
+                        <td>Wood, composite</td>
+                        <td>Ulir kasar untuk grip maksimal</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Self-Tapping Screw</strong></td>
+                        <td>Membuat ulir sendiri saat dipasang</td>
+                        <td>Sheet metal, plastic</td>
+                        <td>Ujung runcing untuk penetrasi</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Deck Screw</strong></td>
+                        <td>Konstruksi outdoor, daya tahan tinggi</td>
+                        <td>Wood, outdoor structures</td>
+                        <td>Tercoating, corrosion resistant</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p><strong>Kegunaan Spesifik:</strong></p>
+            <ul>
+                <li>Perakitan elektronik (PCB mounting, casing assembly)</li>
+                <li>Furniture dan kayu lapis (wood furniture, cabinets)</li>
+                <li>Peralatan rumah tangga kecil (appliances, electronics)</li>
+                <li>Perkakas dan accessories</li>
+                <li>Konstruksi ringan dan temporary assembly</li>
+            </ul>
+
+            <div class="image-placeholder">
+                <p><strong>🖼️ GAMBAR DIBUTUHKAN:</strong><br>
+                <strong>Filename:</strong> screw-types.png<br>
+                <strong>Ukuran:</strong> 600x400px<br>
+                <strong>Deskripsi:</strong> Kombinasi 2 gambar: (1) Tipe kepala sekrup: Phillips, Flat, Square, Torx, (2) Jenis sekrup: Machine, Wood, Self-tapping, Deck dengan dimensi dan karakteristik</p>
+            </div>
+
+            <p><strong>Keuntungan Screwed Joints:</strong></p>
+            <ul>
+                <li>Tidak memerlukan mur terpisah (simplicity)</li>
+                <li>Perakitan cepat dan mudah</li>
+                <li>Cocok untuk material lunak dan composite</li>
+                <li>Cost-effective untuk produksi besar</li>
+            </ul>
+
+            <p><strong>Kerugian Screwed Joints:</strong></p>
+            <ul>
+                <li>Daya tahan lebih rendah dibanding bolted joints</li>
+                <li>Holding power terbatas oleh material sekrup masuk</li>
+                <li>Rentan terhadap stripping (kerusakan ulir)</li>
+                <li>Tidak cocok untuk high-stress applications</li>
+            </ul>
+        </div>
+
+        <!-- 3.3 Riveted Joints -->
+        <h3>3.3 Riveted Joints (Sambungan Keling)</h3>
+        <div class="content-box">
+            <p><strong>Deskripsi:</strong> Sambungan permanen menggunakan keling (rivet) yang dipanaskan dan ditempa untuk mengunci bagian yang disambung menjadi satu unit solid.</p>
+            
+            <p><strong>Prinsip Kerja:</strong></p>
+            <ol>
+                <li>Keling dimasukkan ke dalam lubang yang telah dibuat di dua atau lebih komponen</li>
+                <li>Ujung keling dipanaskan hingga suhu tertentu (cherry red, sekitar 800-900°C)</li>
+                <li>Ujung yang panas dipukul dengan palu khusus (bucking hammer) hingga berubah bentuk membentuk kepala</li>
+                <li>Terbentuk sambungan permanen yang sangat kuat dan tidak akan terlepas</li>
+            </ol>
+
+            <p><strong>Jenis-Jenis Keling:</strong></p>
+            <ul>
+                <li><strong>Solid Rivet:</strong> Keling pejal, standar industri untuk aplikasi berat, memerlukan heating dan bucking</li>
+                <li><strong>Blind Rivet (Pop Rivet):</strong> Dapat dipasang dari satu sisi saja tanpa perlu akses ke belakang, modern dan praktis</li>
+                <li><strong>Semi-Tubular Rivet:</strong> Keling berlubang sebagian, lebih mudah ditempa dibanding solid rivet</li>
+                <li><strong>Split Rivet:</strong> Keling terbelah, biasanya untuk craft dan packaging applications</li>
+            </ul>
+
+            <p><strong>Material Keling:</strong></p>
+            <ul>
+                <li><strong>Aluminium:</strong> Berat ringan, ketahanan korosi baik, untuk pesawat terbang dan aerospace</li>
+                <li><strong>Baja (Carbon Steel):</strong> Kuat dan terjangkau, cocok untuk struktur berat seperti jembatan</li>
+                <li><strong>Tembaga:</strong> Ketahanan korosi sangat baik, untuk aplikasi laut dan lingkungan aggressive</li>
+                <li><strong>Stainless Steel:</strong> Resistansi korosi tertinggi, untuk high-temperature dan chemical environment</li>
+            </ul>
+
+            <p><strong>Kegunaan Spesifik:</strong></p>
+            <ul>
+                <li>Struktur pesawat terbang (aerospace - sangat penting untuk fuselage dan wing)</li>
+                <li>Jembatan dan bangunan baja (bridge construction)</li>
+                <li>Boiler dan pressure vessels industri</li>
+                <li>Kereta api dan lokomotif</li>
+                <li>Tangki storage dan struktur berat lainnya</li>
+            </ul>
+
+            <div class="image-placeholder">
+                <p><strong>🖼️ GAMBAR DIBUTUHKAN:</strong><br>
+                <strong>Filename:</strong> riveting-process.png<br>
+                <strong>Ukuran:</strong> 800x300px (landscape)<br>
+                <strong>Deskripsi:</strong> 4 tahap proses riveting: (1) Rivet dalam lubang - before heating, (2) Heating dengan torch (cherry red), (3) Bucking/Hammering - forming head, (4) Hasil akhir - solid joint. Tunjukkan perubahan bentuk rivet.</p>
+            </div>
+
+            <div class="image-placeholder">
+                <p><strong>🖼️ GAMBAR DIBUTUHKAN:</strong><br>
+                <strong>Filename:</strong> rivet-types.png<br>
+                <strong>Ukuran:</strong> 600x400px<br>
+                <strong>Deskripsi:</strong> Jenis keling: (1) Solid Rivet, (2) Blind Rivet, (3) Semi-tubular, (4) Split Rivet. Tunjukkan potongan melintang masing-masing dan contoh aplikasi (pesawat, jembatan, dll).</p>
+            </div>
+
+            <p><strong>Keuntungan Riveted Joints:</strong></p>
+            <ul>
+                <li>Sambungan sangat kuat dan tahan lama (permanent)</li>
+                <li>Tidak akan terlepas atau longgar seiring waktu dan vibrasi</li>
+                <li>Cocok untuk lingkungan high vibration dan dynamic loading</li>
+                <li>Daya tahan fatigue yang baik</li>
+            </ul>
+
+            <p><strong>Kerugian Riveted Joints:</strong></p>
+            <ul>
+                <li>Permanen - tidak bisa dibongkar tanpa merusak komponen</li>
+                <li>Memerlukan keahlian khusus dan peralatan khusus (riveting gun, torch)</li>
+                <li>Proses lambat dan labor-intensive, tidak efisien untuk small batch</li>
+                <li>Sulit untuk modifikasi atau repair di lapangan</li>
+                <li>Memerlukan persiapan detail dan training operator</li>
+            </ul>
+        </div>
+
+        <!-- 3.4 Pinned Joints -->
+        <h3>3.4 Pinned Joints (Sambungan Pin/Poros)</h3>
+        <div class="content-box">
+            <p><strong>Deskripsi:</strong> Sambungan menggunakan pin (poros/dowel) untuk menyelaraskan (alignment) dan mengunci komponen dalam posisi tetap, biasanya untuk precision parts atau shaft locking.</p>
+            
+            <p><strong>Jenis-Jenis Pin:</strong></p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tipe Pin</th>
+                        <th>Deskripsi</th>
+                        <th>Aplikasi Utama</th>
+                        <th>Keuntungan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Dowel Pin</strong></td>
+                        <td>Pin pejal silinder, presisi tinggi</td>
+                        <td>Alignment parts, precision machinery</td>
+                        <td>Presisi, easy removal, repeatable positioning</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Taper Pin</strong></td>
+                        <td>Pin berbentuk taper (membesar), self-locking</td>
+                        <td>Pulley hub, gear assembly, handle mounting</td>
+                        <td>Self-locking, wedging action, secure holding</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Cotter Pin</strong></td>
+                        <td>Pin berbentuk U, simple dan ekonomis</td>
+                        <td>Shaft lock, clevis pin retention, safety</td>
+                        <td>Economical, simple design, safety feature</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Roll Pin (Spring Pin)</strong></td>
+                        <td>Pin berlubang dengan spring tension</td>
+                        <td>Light duty coupling, sensor mounting</td>
+                        <td>Spring tension, no tools needed sometimes</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Clevis Pin</strong></td>
+                        <td>Pin dengan head, untuk link assembly</td>
+                        <td>Hydraulic cylinder, connection rods</td>
+                        <td>Large head for load bearing, easy handling</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p><strong>Kegunaan Spesifik:</strong></p>
+            <ul>
+                <li>Alignment precision parts dalam machinery (bearing housing alignment)</li>
+                <li>Locking shaft dan pulley di posisi tertentu (prevent rotation)</li>
+                <li>Assembly rod dan linkage di mechanical systems</li>
+                <li>Hydraulic dan pneumatic system connections</li>
+                <li>Drive shaft couplings dan flexible connections</li>
+            </ul>
+
+            <div class="image-placeholder">
+                <p><strong>🖼️ GAMBAR DIBUTUHKAN:</strong><br>
+                <strong>Filename:</strong> pin-types.png<br>
+                <strong>Ukuran:</strong> 700x300px<br>
+                <strong>Deskripsi:</strong> Jenis-jenis pin dengan detail: (1) Dowel Pin - dimensi, (2) Taper Pin - dengan taper angle, (3) Cotter Pin - U-shape, (4) Roll Pin - hollow spring pin, (5) Clevis Pin - dengan head. Tunjukkan dimensi standar untuk masing-masing.</p>
+            </div>
+        </div>
+
+        <!-- 4. Support & Suspension System -->
+        <h2>4. Support & Suspension System (Sistem Penopang)</h2>
+        <div class="content-box">
+            <p><strong>Definisi:</strong> Sistem penopang (support) adalah struktur atau perangkat yang menahan, menggantung (suspend), atau mendukung beban dari komponen atau equipment di tempat yang ditentukan, menjaga posisi dan keselamatan operasi.</p>
+
+            <p><strong>Fungsi Utama Support:</strong></p>
+            <ul>
+                <li>Menahan beban equipment dan pipa dari efek gravitasi</li>
+                <li>Menjaga alignment dan positioning equipment</li>
+                <li>Mencegah gerakan berlebihan atau vibration</li>
+                <li>Mengakomodasi thermal expansion dan contraction</li>
+                <li>Menyediakan akses untuk maintenance dan inspeksi</li>
+            </ul>
+
+            <h4>4.1 Pipe Support (Penopang Pipa)</h4>
+            <ul>
+                <li><strong>Fixed Support (Anchor):</strong> Menahan pipa secara rigid di lokasi tertentu, tidak memungkinkan pergerakan, untuk critical bends atau intersections</li>
+                <li><strong>Guide Support:</strong> Memungkinkan pergerakan aksial (memanjang pipa) tetapi membatasi gerakan radial, untuk thermal growth</li>
+                <li><strong>Sliding Support:</strong> Memungkinkan pergerakan thermal dengan friction minimal, menggunakan PTFE atau material low-friction lainnya</li>
+                <li><strong>Spring Hanger:</strong> Mendukung beban dengan spring, menahan vibration dan thermal movement, ideal untuk heavy pipes with thermal cycling</li>
+                <li><strong>Cantilever Support:</strong> Menopang pipa dari satu sisi saja (konsol), untuk pipe branch atau outlet</li>
+            </ul>
+
+            <h4>4.2 Equipment Support (Penopang Equipment)</h4>
+            <ul>
+                <li><strong>Base Plate:</strong> Plat dasar untuk equipment, mendistribusikan beban ke struktur bawah</li>
+                <li><strong>Lugs & Feet:</strong> Kaki dan telinga penopang untuk attachment equipment pada struktur</li>
+                <li><strong>Trunnion (Trunion):</strong> Penopang berputar untuk drum, tangki horizontal, memungkinkan tilting untuk maintenance</li>
+                <li><strong>Saddle Support:</strong> Penopang berbentuk pelana untuk horizontal vessels, distribusi beban lebih merata</li>
+            </ul>
+
+            <p><strong>Standar Desain Support:</strong></p>
+            <ul>
+                <li><strong>ASME B31.3:</strong> Process Piping - Chapter IV: Design (support design criteria dan requirements)</li>
+                <li><strong>ASME B31.8:</strong> Gas Transmission and Distribution Piping Systems (support requirements untuk gas)</li>
+                <li><strong>MSS SP-69:</strong> Pipe Hangers and Supports - Fabrication and Installation (hangers dan support details)</li>
+                <li><strong>API 570:</strong> Piping Inspection Code (maintenance, support inspection, dan life extension)</li>
+                <li><strong>AISC Steel Construction Manual:</strong> Structural steel support design</li>
+            </ul>
+
+            <div class="image-placeholder">
+                <p><strong>🖼️ GAMBAR DIBUTUHKAN:</strong><br>
+                <strong>Filename:</strong> pipe-support-types.png<br>
+                <strong>Ukuran:</strong> 800x400px<br>
+                <strong>Descripsi:</strong> Jenis pipe support dalam side-view: (1) Fixed Support/Anchor - rigid, (2) Guide Support - pergerakan aksial, (3) Sliding Support - PTFE pad, (4) Spring Hanger - dengan spring, (5) Cantilever Support - konsol. Tunjukkan direction of movement untuk masing-masing.</p>
+            </div>
+
+            <div class="image-placeholder">
+                <p><strong>🖼️ GAMBAR DIBUTUHKAN:</strong><br>
+                <strong>Filename:</strong> equipment-support.png<br>
+                <strong>Ukuran:</strong> 600x400px<br>
+                <strong>Descripsi:</strong> Equipment support types dengan detail drawing: (1) Base Plate - dimensi, (2) Lugs - attachment point, (3) Saddle Support - untuk horizontal vessel, (4) Trunnion - rotating support. Tunjukkan load distribution path.</p>
+            </div>
+        </div>
+
+        <!-- 5. Tabel Perbandingan Lengkap -->
+        <h2>5. Tabel Perbandingan Lengkap Fastener Types</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tipe</th>
+                    <th>Material Umum</th>
+                    <th>Removable?</th>
+                    <th>Standar</th>
+                    <th>Kegunaan Utama</th>
+                    <th>Daya Tahan</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Bolted</strong></td>
+                    <td>Steel, SS, Brass, Titanium</td>
+                    <td>✅ Ya</td>
+                    <td>ASTM A307-A540, ISO 898</td>
+                    <td>Struktur, mesin, otomotif, pressure vessel</td>
+                    <td>Tinggi (high strength grades)</td>
+                </tr>
+                <tr>
+                    <td><strong>Screwed</strong></td>
+                    <td>Steel, SS, Brass</td>
+                    <td>✅ Ya</td>
+                    <td>ISO 1207-1207, DIN 85-89</td>
+                    <td>Elektronik, furnitur, aplikasi ringan</td>
+                    <td>Sedang</td>
+                </tr>
+                <tr>
+                    <td><strong>Riveted</strong></td>
+                    <td>Al, Steel, Cu, SS</td>
+                    <td>❌ Tidak</td>
+                    <td>ASTM B470, DIN 124-125</td>
+                    <td>Pesawat, jembatan, boiler, tank</td>
+                    <td>Sangat tinggi (permanent)</td>
+                </tr>
+                <tr>
+                    <td><strong>Pinned</strong></td>
+                    <td>Steel, SS, Alloy</td>
+                    <td>⚠️ Bervariasi</td>
+                    <td>DIN 1444-1480, ISO 2338</td>
+                    <td>Alignment, linkage, shaft coupling</td>
+                    <td>Tinggi untuk presisi positioning</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- 6. Spesifikasi & Material -->
+        <h2>6. Spesifikasi & Material Standar</h2>
+        <div class="content-box">
+            <h3>6.1 Material Selection Guidelines</h3>
+            <ul>
+                <li><strong>Carbon Steel (Baja Karbon):</strong> Cost-effective dan kuat untuk aplikasi umum, namun rentan korosi - memerlukan coating atau plating. Digunakan untuk general machinery.</li>
+                <li><strong>Stainless Steel 304/316:</strong> Ketahanan korosi baik hingga sangat baik, cocok untuk lingkungan laut/kimia/food processing. 316 lebih baik untuk marine/chemical.</li>
+                <li><strong>Alloy Steel (A4-70, A2-70):</strong> Kekuatan tinggi dengan ketahanan korosi moderat, untuk high-stress applications dan elevated temperature.</li>
+                <li><strong>Brass:</strong> Non-magnetic, appearance bagus, ketahanan korosi moderat, untuk dekoratif dan low-stress applications.</li>
+                <li><strong>Titanium:</strong> Kekuatan/weight ratio tertinggi, corrosion-resistant, mahal - hanya untuk aerospace dan specialized applications.</li>
+            </ul>
+
+            <h3>6.2 Bolt Grade Classification</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Grade</th>
+                        <th>Material</th>
+                        <th>Tensile Strength (Mpa)</th>
+                        <th>Yield Strength (Mpa)</th>
+                        <th>Aplikasi Utama</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ASTM A307</td>
+                        <td>Carbon Steel</td>
+                        <td>400-600</td>
+                        <td>260</td>
+                        <td>General purpose, low stress aplikasi</td>
+                    </tr>
+                    <tr>
+                        <td>Grade 5 (ISO 5.8)</td>
+                        <td>Alloy Steel</td>
+                        <td>830</td>
+                        <td>690</td>
+                        <td>Medium strength application, automotive</td>
+                    </tr>
+                    <tr>
+                        <td>Grade 8 (ISO 8.8)</td>
+                        <td>Alloy Steel</td>
+                        <td>1040</td>
+                        <td>865</td>
+                        <td>High strength, structural, machinery</td>
+                    </tr>
+                    <tr>
+                        <td>Grade B7 (ASTM A193)</td>
+                        <td>Alloy Steel</td>
+                        <td>1050</td>
+                        <td>870</td>
+                        <td>High-temperature, pressure vessel, high-temp steam</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="image-placeholder">
+                <p><strong>🖼️ GAMBAR DIBUTUHKAN:</strong><br>
+                <strong>Filename:</strong> bolt-grades-marking.png<br>
+                <strong>Ukuran:</strong> 600x300px<br>
+                <strong>Descripsi:</strong> Identifikasi marking pada kepala baut untuk berbagai grade. Tunjukkan: (1) ASTM A307 - plain/unmarked, (2) Grade 5 - 3 radial lines, (3) Grade 8 - 6 radial lines, (4) Grade B7 - special marking. Tunjukkan dengan foto atau diagram jelas.</p>
+            </div>
+        </div>
+
+        <!-- 7. Prevention Loosening -->
+        <h2>7. Pencegahan Fastener Terlepas (Anti-Loosening Devices)</h2>
+        <div class="content-box">
+            <p>Dalam aplikasi dengan vibration, thermal cycling, atau dynamic loading, fastener sangat rentan terlepas. Berikut adalah metode pencegahannya yang terbukti efektif:</p>
+
+            <h3>Metode Mekanis (Mechanical Methods):</h3>
+            <ul>
+                <li><strong>Spring Washer:</strong> Washer berpegas yang maintain clamping force seiring waktu, memberikan resilience saat vibration</li>
+                <li><strong>Lock Washer (Toothed Washer):</strong> Washer bergerigi yang bite into surface untuk prevent rotasi, simple dan efektif</li>
+                <li><strong>Nylon Insert Lock Nut:</strong> Mur dengan nylon insert yang create friction pada thread, sangat efektif untuk vibration prevention</li>
+                <li><strong>Deformed Thread:</strong> Ulir yang dideformasi untuk tight fit, tidak perlu additional hardware</li>
+            </ul>
+
+            <h3>Metode Kimia (Chemical Methods):</h3>
+            <ul>
+                <li><strong>Thread-Locking Adhesive (Threadlocker):</strong> Lem fastener yang mengisi gap antar ulir, prevents unwinding dari vibration</li>
+                <li><strong>Strength Levels:</strong> Low strength (removable dengan hand/small tools), Medium (removable dengan normal tools), High (semi-permanent, needs heat untuk removal)</li>
+                <li><strong>Brand Umum:</strong> Loctite (red/blue/green), Permatex, Three Bond</li>
+                <li><strong>Aplikasi:</strong> Diaplikasikan pada thread atau kepala baut sebelum assembly, drying time 24 jam untuk full strength</li>
+            </ul>
+
+            <div class="image-placeholder">
+                <p><strong>🖼️ GAMBAR DIBUTUHKAN:</strong><br>
+                <strong>Filename:</strong> anti-loosening-devices.png<br>
+                <strong>Ukuran:</strong> 600x350px<br>
+                <strong>Descripsi:</strong> Kombinasi berbagai anti-loosening method: (1) Spring Washer - side view, (2) Lock Washer toothed, (3) Nylon Insert Lock Nut - cutaway view, (4) Threadlocker application on thread. Tunjukkan working principle untuk masing-masing.</p>
+            </div>
+
+            <p><strong>Perbandingan Metode Anti-Loosening:</strong></p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Metode</th>
+                        <th>Efektivitas</th>
+                        <th>Cost</th>
+                        <th>Removability</th>
+                        <th>Aplikasi Terbaik</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Spring Washer</td>
+                        <td>Sedang</td>
+                        <td>Rendah</td>
+                        <td>Mudah</td>
+                        <td>General vibration environment</td>
+                    </tr>
+                    <tr>
+                        <td>Lock Washer</td>
+                        <td>Sedang-Tinggi</td>
+                        <td>Rendah</td>
+                        <td>Mudah</td>
+                        <td>Standard machinery, automotive</td>
+                    </tr>
+                    <tr>
+                        <td>Nylon Insert Lock Nut</td>
+                        <td>Tinggi</td>
+                        <td>Sedang</td>
+                        <td>Mudah</td>
+                        <td>High vibration, aerospace</td>
+                    </tr>
+                    <tr>
+                        <td>Threadlocker (Medium)</td>
+                        <td>Sangat Tinggi</td>
+                        <td>Sedang</td>
+                        <td>Mudah (dengan heat)</td>
+                        <td>Critical high-vibration aplikasi</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 8. Standar Referensi -->
+        <h2>8. Standar Internasional & Referensi</h2>
+        <div class="content-box">
+            <h3>Standar ISO (International Organization for Standardization):</h3>
+            <ul>
+                <li><strong>ISO 898-1:</strong> Mechanical properties of fasteners - Bolts, screws and studs (Part 1: Bolts and screws)</li>
+                <li><strong>ISO 4014/4017:</strong> Hexagon bolts and screws specifications (Coarse/Fine pitch)</li>
+                <li><strong>ISO 2338:</strong> Dowel pins, wrapped and machined (Precision dowels)</li>
+                <li><strong>ISO 9130:</strong> Fastener surface protection (Coating dan corrosion resistance)</li>
+            </ul>
+
+            <h3>Standar ASTM (American Society for Testing and Materials):</h3>
+            <ul>
+                <li><strong>ASTM A307:</strong> Carbon steel bolts and studs (Low-strength fasteners)</li>
+                <li><strong>ASTM A193:</strong> Alloy-steel and stainless steel bolts (High-temperature bolts)</li>
+                <li><strong>ASTM B470:</strong> Copper alloy rivets and cold-headed fasteners</li>
+                <li><strong>ASTM F836:</strong> Hardened steel washers</li>
+            </ul>
+
+            <h3>Standar DIN (Deutsches Institut für Normung - German):</h3>
+            <ul>
+                <li><strong>DIN 931:</strong> Hexagon bolts with metric coarse pitch threads</li>
+                <li><strong>DIN 933:</strong> Hexagon nuts with metric threads</li>
+                <li><strong>DIN 1444:</strong> Taper pins (conical pins)</li>
+                <li><strong>DIN 125:</strong> Washers</li>
+            </ul>
+
+            <h3>Standar JIS (Japanese Industrial Standards):</h3>
+            <ul>
+                <li><strong>JIS B 1180:</strong> Metric screw threads</li>
+                <li><strong>JIS B 1096:</strong> Hexagon bolts</li>
+                <li><strong>JIS B 1197:</strong> Hexagon nuts</li>
+            </ul>
+
+            <h3>Standar Industri Khusus:</h3>
+            <ul>
+                <li><strong>ASME B31.3:</strong> Process Piping (includes fastener requirements untuk piping systems)</li>
+                <li><strong>API 579:</strong> Fitness-for-Service (fastener inspection dan life assessment)</li>
+                <li><strong>MSS SP-6:</strong> Fasteners for use in flanged connections (flange bolting standards)</li>
+                <li><strong>AISC Steel Construction Manual:</strong> Structural fastener requirements</li>
+            </ul>
+        </div>
+
+        <!-- 9. Checklist Desain -->
+        <h2>9. Checklist Pemilihan & Desain Fastener</h2>
+        <div class="content-box">
+            <ul style="list-style-type: none; padding: 0;">
+                <li>☐ <strong>Analisis Beban:</strong> Tentukan beban yang akan ditahan (tensile, shear, bending, fatigue)</li>
+                <li>☐ <strong>Environmental Analysis:</strong> Identifikasi environment (temperatur, kelembaban, korosi, vibration)</li>
+                <li>☐ <strong>Loading Conditions:</strong> Tentukan tipe loading (static, dynamic, cyclic, thermal cycling)</li>
+                <li>☐ <strong>Material Selection:</strong> Pilih material yang sesuai standar industri dan kondisi</li>
+                <li>☐ <strong>Sizing Calculation:</strong> Hitung diameter dan grade fastener yang diperlukan</li>
+                <li>☐ <strong>Anti-Loosening Method:</strong> Tentukan metode anti-loosening jika diperlukan</li>
+                <li>☐ <strong>Standards Verification:</strong> Verifikasi dengan kode/standar yang berlaku (ASME, API, DIN, ISO)</li>
+                <li>☐ <strong>Assembly Feasibility:</strong> Pertimbangkan ease of assembly dan maintenance</li>
+                <li>☐ <strong>Torque Calculation:</strong> Hitung torque requirement untuk installation</li>
+                <li>☐ <strong>Documentation:</strong> Dokumentasi spesifikasi lengkap di engineering drawing</li>
+                <li>☐ <strong>Supplier Verification:</strong> Verifikasi supplier dan quality certificate</li>
+                <li>☐ <strong>Inspection Plan:</strong> Buat rencana inspeksi untuk quality assurance</li>
+            </ul>
+        </div>
+
+        <!-- 10. Design Tips -->
+        <h2>10. Tips Praktis Desain Fastener</h2>
+        <div class="content-box">
+            <h3>Best Practices:</h3>
+            <ul>
+                <li><strong>Konsistensi Ukuran:</strong> Gunakan ukuran baut standar yang sama untuk seluruh proyek agar mudah maintenance</li>
+                <li><strong>Material Matching:</strong> Hindari galvanic corrosion dengan mencocokkan material baut dan komponen</li>
+                <li><strong>Proper Tightening:</strong> Gunakan torque wrench untuk memastikan pre-tension yang tepat, jangan overtighten</li>
+                <li><strong>Lubricant Selection:</strong> Gunakan lubricant yang tepat saat assembly untuk distribusi pre-tension yang merata</li>
+                <li><strong>Inspection Schedule:</strong> Buat jadwal inspeksi berkala untuk fastener yang critical</li>
+                <li><strong>Documentation:</strong> Catat semua informasi fastener (type, grade, size, torque) di maintenance manual</li>
+            </ul>
+
+            <h3>Common Mistakes to Avoid:</h3>
+            <ul>
+                <li>❌ Menggunakan baut yang salah grade untuk aplikasi (undershoot strength)</li>
+                <li>❌ Tidak menggunakan washer pada surface yang soft atau irregular</li>
+                <li>❌ Menggunakan anti-seizant yang berlebihan (bisa slip)</li>
+                <li>❌ Tidak mengetahui material compatibility (mixing SS dengan CS bisa cause corrosion)</li>
+                <li>❌ Mengabaikan vibration environment (tidak menggunakan lock washer/threadlocker)</li>
+                <li>❌ Mengandalkan friction saja tanpa proper clamping force</li>
+            </ul>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>📚 EMMT Learning</h4>
+                <p>Platform pembelajaran online untuk Elemen Mesin dan Menggambar Teknik di Universitas Sriwijaya.</p>
+            </div>
+            <div class="footer-section">
+                <h4>📖 Topik Lainnya</h4>
+                <ul>
+                    <li><a href="pfd-symbols.html">PFD Symbols</a></li>
+                    <li><a href="pipe-schedule-hazop.html">Pipe & HAZOP</a></li>
+                    <li><a href="pipeline-colors.html">Pipeline Colors</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>🔗 Standar Referensi</h4>
+                <ul>
+                    <li>ISO 898-1</li>
+                    <li>ASTM A307</li>
+                    <li>DIN 931</li>
+                    <li>ASME B31.3</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>👤 Creator</h4>
+                <p><strong>Tiara Anisda Rahmadani</strong></p>
+                <p>NIM: 03031182530006</p>
+                <p>Teknik Kimia - Semester 2</p>
+                <p>Universitas Sriwijaya</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 EMMT Learning Platform | Universitas Sriwijaya</p>
+            <p>Edukasi untuk masa depan engineer yang lebih baik</p>
+        </div>
+    </footer>
+</body>
+</html>
