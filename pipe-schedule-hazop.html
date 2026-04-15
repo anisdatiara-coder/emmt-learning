@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pipe Schedule & HAZOP/HAZID - EMMT Learning</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">📚 EMMT Learning</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="fastener-joint.html" class="nav-link">Fastener & Joint</a></li>
+                <li><a href="pfd-symbols.html" class="nav-link">PFD Symbols</a></li>
+                <li><a href="pipe-schedule-hazop.html" class="nav-link active">Pipe & HAZOP</a></li>
+                <li><a href="pipeline-colors.html" class="nav-link">Pipeline Colors</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <section class="content-section">
+        <h1>📋 Pipe Schedule & HAZOP/HAZID</h1>
+        <p><strong>Last Updated:</strong> 2024 | <strong>Level:</strong> Advanced | <strong>Est. Reading Time:</strong> 60 minutes</p>
+
+        <!-- 1. Pengenalan Pipe Sizing -->
+        <h2>1. Pengenalan Pipe Sizing & Schedule</h2>
+        <div class="content-box">
+            <h3>Apa itu Pipe Schedule?</h3>
+            <p>Pipe schedule adalah standar untuk menentukan dimensi pipa (diameter nominal, outside diameter, wall thickness) dan pressure rating berdasarkan material dan kondisi operasi. Setiap schedule memiliki kombinasi ukuran dan ketebalan dinding yang berbeda untuk menahan tekanan yang berbeda.</p>
+
+            <h3>Fungsi Pipe Schedule:</h3>
+            <ul>
+                <li><strong>Safety:</strong> Memastikan pipa dapat menahan operating pressure dan design pressure dengan factor of safety</li>
+                <li><strong>Standardisasi:</strong> Menggunakan size standar untuk ease of procurement dan replacement</li>
+                <li><strong>Cost Optimization:</strong> Memilih schedule yang tepat untuk balance antara cost dan safety</li>
+                <li><strong>Performance:</strong> Menentukan pressure drop dan flow velocity di sistem</li>
+                <li><strong>Compatibility:</strong> Memastikan fitting dan equipment compatible dengan pipe size</li>
+            </ul>
+
+            <h3>Standar Pipe Schedule Internasional:</h3>
+            <ul>
+                <li><strong>ASME B36.10M:</strong> Welded and seamless wrought steel pipe (Metrik dan Imperial)</li>
+                <li><strong>ASME B36.19M:</strong> Stainless steel pipe (Metrik dan Imperial)</li>
+                <li><strong>ISO 1127:</strong> Steel tubes - Outside diameters and wall thicknesses (Metrik)</li>
+                <li><strong>DIN 2391:</strong> Precision steel tubes (German standard)</li>
+            </ul>
+
+            <h3>Pipe Schedule Designations:</h3>
+            <ul>
+                <li><strong>Sch 10, 20, 30, 40, 60, 80, 100, 120, 140, 160:</strong> Increasing wall thickness untuk pressure rating</li>
+                <li><strong>STD (Standard):</strong> Equivalent to Sch 40 untuk carbon steel</li>
+                <li><strong>XS (Extra Strong):</strong> Equivalent to Sch 80 untuk carbon steel</li>
+                <li><strong>XXS (Double Extra Strong):</strong> Thickest wall untuk highest pressure</li>
+            </ul>
+        </div>
+
+        <!-- 2. Design Pressure Calculation -->
+        <h2>2. Design Pressure & Wall Thickness Calculation</h2>
+        <div class="content-box">
+            <h3>Formula Desain Tekanan Pipa (Barlow's Formula):</h3>
+            <p><strong>Barlow's Formula (most commonly used):</strong></p>
+            <p style="text-align: center; font-family: monospace; background: #f0f8ff; padding: 1rem; border-radius: 5px;">
+                <strong>P = (2 × S × t) / (D - t)</strong>
+            </p>
+            <p>Dimana:</p>
+            <ul>
+                <li><strong>P</strong> = Design Pressure (psi atau MPa)</li>
+                <li><strong>S</strong> = Allowable stress material (psi atau MPa)</li>
+                <li><strong>t</strong> = Minimum wall thickness (inches atau mm)</li>
+                <li><strong>D</strong> = Outside diameter pipa (inches atau mm)</li>
+            </ul>
+
+            <h3>Factor of Safety dalam Desain:</h3>
+            <ul>
+                <li><strong>ASME B31.3 (Process Piping):</strong> Factor of safety 3.5 untuk seamless pipe, 4 untuk welded pipe</li>
+                <li><strong>ASME B31.8 (Gas Distribution):</strong> Factor of safety 0.5 hingga 0.72 tergantung class location</li>
+                <li><strong>Corrosion Allowance:</strong> Additional thickness untuk anticipated corrosion (typically 1/16" atau 1.6mm)</li>
+            </ul>
+
+            <h3>Wall Thickness Selection Process:</h3>
+            <ol>
+                <li>Tentukan operating pressure dan design pressure (biasanya 1.1-1.5x operating pressure)</li>
+                <li>Tentukan material pipa dan temperature rating</li>
+                <li>Tentukan allowable stress (S) dari design code (ASME B31.3, API 579)</li>
+                <li>Hitung required wall thickness menggunakan formula</li>
+                <li>Add corrosion allowance (1/16" - 1/8" typical)</li>
+                <li>Round up ke schedule standar terdekat</li>
+                <li>Verifikasi dengan code requirement dan factor of safety</li>
+            </ol>
+
+            <div class="image-placeholder">
+                <p><strong>🖼️ GAMBAR DIBUTUHKAN:</strong><br>
+                <strong>Filename:</strong> design-pressure-calc.png<br>
+                <strong>Ukuran:</strong> 700x400px<br>
+                <strong>Deskripsi:</strong> Diagram Barlow's Formula dengan label D, t, P, S. Tunjukkan contoh calculation step-by-step untuk pipa 2" Schedule 40 dengan operating pressure 150 psi.</p>
+            </div>
+
+            <h3>Contoh Perhitungan:</h3>
+            <p><strong>Diketahui:</strong></p>
+            <ul>
+                <li>Nominal Diameter: 2 inch (NPS 2)</li>
+                <li>Operating Pressure: 150 psi</li>
+                <li>Material: Carbon Steel (ASTM A53, Grade B)</li>
+                <li>Temperature: 250°F</li>
+            </ul>
+            <p><strong>Penyelesaian:</strong></p>
+            <ol>
+                <li>Design Pressure = 150 × 1.1 = 165 psi (dengan 10% margin)</li>
+                <li>Allowable Stress S = 15,000 psi (dari ASME B31.3 table)</li>
+                <li>Outer Diameter D = 2.375 inch (untuk NPS 2)</li>
+                <li>Required t = (P × D) / (2S + P) = (165 × 2.375) / (2×15000 + 165) = 0.013 inch</li>
+                <li>Add corrosion allowance: 0.013 + 0.062 (1/16") = 0.075 inch</li>
+                <li>Select Schedule 40 dengan wall thickness 0.154 inch (memenuhi requirement dengan FS > 3.5)</li>
+            </ol>
+        </div>
+
+        <!-- 3. Pipe Schedule Table -->
+        <h2>3. Standar Pipe Schedule Table</h2>
+        <div class="content-box">
+            <p>Tabel Pipe Schedule untuk Carbon Steel (ASME B36.10M):</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>NPS (inch)</th>
+                        <th>OD (inch)</th>
+                        <th>Sch 10 WT</th>
+                        <th>Sch 40 WT</th>
+                        <th>Sch 80 WT</th>
+                        <th>XXS WT</th>
+                        <th>Sch 40 Rating (psi)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1/2</td>
+                        <td>0.840</td>
+                        <td>0.065</td>
+                        <td>0.109</td>
+                        <td>0.147</td>
+                        <td>0.294</td>
+                        <td>2000</td>
+                    </tr>
+                    <tr>
+                        <td>3/4</td>
+                        <td>1.050</td>
+                        <td>0.065</td>
+                        <td>0.113</td>
+                        <td>0.154</td>
+                        <td>0.308</td>
+                        <td>1950</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>1.315</td>
+                        <td>0.072</td>
+                        <td>0.133</td>
+                        <td>0.179</td>
+                        <td>0.358</td>
+                        <td>1900</td>
+                    </tr>
+                    <tr>
+                        <td>1.5</td>
+                        <td>1.900</td>
+                        <td>0.083</td>
+                        <td>0.145</td>
+                        <td>0.200</td>
+                        <td>0.400</td>
+                        <td>1800</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>2.375</td>
+                        <td>0.083</td>
+                        <td>0.154</td>
+                        <td>0.218</td>
+                        <td>0.436</td>
+                        <td>1700</td>
+                    </tr>
+                    <tr>
+                        <td>2.5</td>
+                        <td>2.875</td>
+                        <td>0.083</td>
+                        <td>0.203</td>
+                        <td>0.276</td>
+                        <td>0.552</td>
+                        <td>1600</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>3.500</td>
+                        <td>0.083</td>
+                        <td>0.216</td>
+                        <td>0.300</td>
+                        <td>0.600</td>
+                        <td>1500</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>4.500</td>
+                        <td>0.083</td>
+                        <td>0.237</td>
+                        <td>0.337</td>
+                        <td>0.674</td>
+                        <td>1400</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>6.625</td>
+                        <td>0.109</td>
+                        <td>0.280</td>
+                        <td>0.432</td>
+                        <td>0.864</td>
+                        <td>1100</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>8.625</td>
+                        <td>0.109</td>
+                        <td>0.322</td>
+                        <td>0.500</td>
+                        <td>1.000</td>
+                        <td>975</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p><strong>Catatan:</strong> WT = Wall Thickness (inch), OD = Outside Diameter, NPS = Nominal Pipe Size</p>
+
+            <div class="image-placeholder">
+                <p><strong>🖼️ GAMBAR DIBUTUHKAN:</strong><br>
+                <strong>Filename:</strong> pipe-schedule-table.png<br>
+                <strong>Ukuran:</strong> 1000x500px<br>
+                <strong>Deskripsi:</strong> Visual tabel pipe schedule dengan wall thickness untuk Sch 10, 40, 80, XXS. Tunjukkan juga cross-section pipa dengan dimensi label (OD, WT, ID).</p>
+            </div>
+        </div>
+
+        <!-- 4. HAZOP Introduction -->
+        <h2>4. HAZOP (Hazard and Operability) Study</h2>
+        <div class="content-box">
+            <h3>Apa itu HAZOP?</h3>
+            <p>HAZOP (Hazard and Operability Study) adalah systematic dan structured methodology untuk mengidentifikasi potensi hazard dan operability issues dalam process systems. HAZOP dilakukan oleh tim multi-disiplin yang menganalisis setiap section (node) dari process dengan menggunakan guide words untuk generate deviations dari intended design.</p>
+
+            <h3>Sejarah & Standar HAZOP:</h3>
+            <ul>
+                <li><strong>Dikembangkan:</strong> Di ICI (Imperial Chemical Industries) pada 1970s</li>
+                <li><strong>Standar Internasional:</strong> IEC 61882 (Hazard and Operability Studies)</li>
+                <li><strong>Industri:</strong> Widely adopted di petrochemical, pharmaceutical, mining, utility</li>
+                <li><strong>Referensi:</strong> CCPS Guidelines for Hazard Evaluation Procedures, API RP 750</li>
+            </ul>
+
+            <h3>Tujuan HAZOP:</h3>
+            <ul>
+                <li><strong>Identify Hazards:</strong> Mengidentifikasi semua potential hazards yang mungkin terjadi</li>
+                <li><strong>Assess Risks:</strong> Mengevaluasi consequences dan likelihood dari setiap hazard</li>
+                <li><strong>Define Safeguards:</strong> Mengidentifikasi existing safeguards dan effectiveness-nya</li>
+                <li><strong>Recommend Actions:</strong> Propose improvement atau additional controls untuk risk mitigation</li>
+                <li><strong>Document Findings:</strong> Create comprehensive record untuk future reference dan follow-up</li>
+            </ul>
+
+            <h3>HAZOP Methodology - Step by Step:</h3>
+            <ol>
+                <li><strong>Define Study Scope:</strong> Tentukan section atau sistem yang akan distudi</li>
+                <li><strong>Form Team:</strong> Kumpulkan expert dari berbagai disiplin (Process Engineer, Mechanical Engineer, Instrument Engineer, Operator)</li>
+                <li><strong>Identify Nodes:</strong> Bagi sistem menjadi sections/nodes untuk analisis detail</li>
+                <li><strong>Apply Guide Words:</strong> Gunakan guide words (No, More, Less, Reverse, Other) untuk generate deviations</li>
+                <li><strong>Analyze Consequences:</strong> Tentukan apa yang terjadi jika deviation ini terjadi</li>
+                <li><strong>Assess Safeguards:</strong> Identifikasi controls yang existing untuk mencegah atau mitigate</li>
+                <li><strong>Risk Rating:</strong> Rate risk berdasarkan probability × severity matrix</li>
+                <li><strong>Define Actions:</strong> Tentukan tindakan yang diperlukan untuk mengurangi risk</li>
+                <li><strong>Document & Follow-up:</strong> Record semua findings dan track action items hingga completion</li>
+            </ol>
+
+            <div class="image-placeholder">
+                <p><strong>🖼️ GAMBAR DIBUTUHKAN:</strong><br>
+                <strong>Filename:</strong> hazop-process-flow.png<br>
+                <strong>Ukuran:</strong> 800x500px<br>
+                <strong>Deskripsi:</strong> Diagram alur HAZOP dari awal hingga akhir: Define Scope → Form Team → Identify Nodes → Apply Guide Words → Analyze → Assess → Risk Rating → Actions → Documentation. Tunjukkan feedback loop.</p>
+            </div>
+        </div>
+
+        <!-- 5. HAZOP Guide Words & Deviations -->
+        <h2>5. HAZOP Guide Words & Potential Deviations</h2>
+        <div class="content-box">
+            <p><strong>Guide Words</strong> adalah systematic keywords yang digunakan untuk generate deviations dari intended design intent. Kombinasi guide word + parameter menghasilkan potential deviation untuk dianalisis.</p>
+
+            <h3>Primary HAZOP Guide Words:</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Guide Word</th>
+                        <th>Meaning</th>
+                        <th>Example Deviation</th>
+                        <th>Parameter</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>NO / NONE</strong></td>
+                        <td>Complete negation of intent</td>
+                        <td>No flow, No temperature control, No pressure relief</td>
+                        <td>Flow, Temperature, Pressure</td>
+                    </tr>
+                    <tr>
+                        <td><strong>MORE / INCREASED</strong></td>
+                        <td>Quantitative increase</td>
+                        <td>More flow, Higher temperature, Higher pressure</td>
+                        <td>Flow, Temperature, Pressure, Level</td>
+                    </tr>
+                    <tr>
+                        <td><strong>LESS / DECREASED</strong></td>
+                        <td>Quantitative decrease</td>
+                        <td>Less flow, Lower temperature, Lower pressure</td>
+                        <td>Flow, Temperature, Pressure, Level</td>
+                    </tr>
+                    <tr>
+                        <td><strong>REVERSE</strong></td>
+                        <td>Opposite flow or action</td>
+                        <td>Reverse flow (backflow), Reverse rotation</td>
+                        <td>Flow direction, Rotation, Circulation</td>
+                    </tr>
+                    <tr>
+                        <td><strong>OTHER THAN / DIFFERENT</strong></td>
+                        <td>Qualitative change</td>
+                        <td>Wrong material, Contamination, Wrong composition</td>
+                        <td>Material, Composition, Phase</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Contoh HAZOP Analysis untuk Pump Discharge Line:</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Node</th>
+                        <th>Parameter</th>
+                        <th>Guide Word</th>
+                        <th>Deviation</th>
+                        <th>Cause</th>
+                        <th>Consequence</th>
+                        <th>Safeguard</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="4">Pump Discharge</td>
+                        <td rowspan="4">Flow</td>
+                        <td>NO</td>
+                        <td>No flow through discharge</td>
+                        <td>Pump cavitation, Blocked discharge valve, Pump failure</td>
+                        <td>Loss of system pressure, Pump damage, Shutdown</td>
+                        <td>Pressure switch with alarm, Manual check</td>
+                        <td>Install flow indicator (FI)</td>
+                    </tr>
+                    <tr>
+                        <td>MORE</td>
+                        <td>Higher flow rate than design</td>
+                        <td>Pump overspeed, Bypass valve stuck open, Control valve failure</td>
+                        <td>High velocity, Erosion/corrosion, Pipe rupture risk, Vibration</td>
+                        <td>Relief valve set at max, Design pipe for max flow</td>
+                        <td>Upgrade relief valve setting</td>
+                    </tr>
+                    <tr>
+                        <td>LESS</td>
+                        <td>Lower flow rate than design</td>
+                        <td>Partial blockage in piping, Valve partially closed, Pump degradation</td>
+                        <td>Reduced production capacity, Insufficient cooling/heating</td>
+                        <td>Visual inspection, Flow meter</td>
+                        <td>Schedule periodic piping inspection</td>
+                    </tr>
+                    <tr>
+                        <td>REVERSE</td>
+                        <td>Backflow dari discharge line</td>
+                        <td>Check valve failure, Reverse pressure from downstream</td>
+                        <td>Pump damage, Product contamination, Loss of system integrity</td>
+                        <td>Check valve on discharge</td>
+                        <td>Periodic check valve testing</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="image-placeholder">
+                <p><strong>🖼️ GAMBAR DIBUTUHKAN:</strong><br>
+                <strong>Filename:</strong> hazop-guide-words.png<br>
+                <strong>Ukuran:</strong> 900x400px<br>
+                <strong>Deskripsi:</strong> Tabel visual menunjukkan 5 guide words (NO, MORE, LESS, REVERSE, OTHER) dengan contoh deviation untuk parameter Flow, Temperature, Pressure, Composition.</p>
+            </div>
+
+            <div class="image-placeholder">
+                <p><strong>🖼️ GAMBAR DIBUTUHKAN:</strong><br>
+                <strong>Filename:</strong> hazop-node-diagram.png<br>
+                <strong>Ukuran:</strong> 750x400px<br>
+                <strong>Descripción:</strong> Contoh simple piping system dengan node identification: Feed Pump inlet (Node 1), Pump discharge (Node 2), Heat Exchanger inlet (Node 3), Reactor inlet (Node 4). Tunjukkan bagaimana sistem dibagi menjadi nodes untuk HAZOP analysis.</p>
+            </div>
+        </div>
+
+        <!-- 6. HAZID Introduction -->
+        <h2>6. HAZID (Hazard Identification) Study</h2>
+        <div class="content-box">
+            <h3>Apa itu HAZID?</h3>
+            <p>HAZID (Hazard Identification) adalah qualitative, brainstorming-based approach untuk mengidentifikasi broad categories dari potential hazards dalam sistem design tahap awal. HAZID dilakukan lebih awal dalam project lifecycle dibanding HAZOP untuk identify high-level risks sebelum detailed design.</p>
+
+            <h3>Perbedaan HAZOP vs HAZID:</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Aspek</th>
+                        <th>HAZOP</th>
+                        <th>HAZID</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Timing</td>
+                        <td>Detailed design phase atau commissioning</td>
+                        <td>Concept atau early design phase</td>
+                    </tr>
+                    <tr>
+                        <td>Methodology</td>
+                        <td>Systematic, guide-word based, structured</td>
+                        <td>Qualitative, brainstorming based, checklist approach</td>
+                    </tr>
+                    <tr>
+                        <td>Detail Level</td>
+                        <td>Highly detailed, line-by-line analysis</td>
+                        <td>Broad, high-level overview</td>
+                    </tr>
+                    <tr>
+                        <td>Documentation</td>
+                        <td>Comprehensive, detailed recommendations</td>
+                        <td>Summary of key hazards untuk further study</td>
+                    </tr>
+                    <tr>
+                        <td>Duration</td>
+                        <td>Weeks to months</td>
+                        <td>Days to 1-2 weeks</td>
+                    </tr>
+                    <tr>
+                        <td>Cost</td>
+                        <td>Higher, resource intensive</td>
+                        <td>Lower, quick assessment</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>HAZID Typical Hazard Categories:</h3>
+            <ul>
+                <li><strong>Loss of Containment:</strong> Leakage atau rupture dari pipa, vessel, equipment</li>
+                <li><strong>Overpressure:</strong> Tekanan berlebih yang bisa cause rupture</li>
+                <li><strong>Under-pressure:</strong> Tekanan rendah yang bisa cause implosion atau malfunction</li>
+                <li><strong>Thermal Events:</strong> Thermal runaway, fire hazard dari fluid panas</li>
+                <li><strong>Toxic Release:</strong> Release dari toxic substance ke environment</li>
+                <li><strong>Equipment Failure:</strong> Pump failure, valve failure, control system failure</li>
+                <li><strong>Vibration & Noise:</strong> Excessive vibration dari rotating equipment</li>
+                <li><strong>Corrosion & Erosion:</strong> Material degradation dari corrosive atau erosive fluid</li>
+                <li><strong>Blockage:</strong> Pipe blockage dari deposits, crystals, atau foreign material</li>
+            </ul>
+        </div>
+
+        <!-- 7. Risk Assessment Matrix -->
+        <h2>7. Risk Assessment & Matrix</h2>
+        <div class="content-box">
+            <h3>Risk Definition:</h3>
+            <p><strong>Risk = Probability × Consequence (Severity)</strong></p>
+
+            <h3>Risk Rating Scale:</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rating</th>
+                        <th>Probability (Likelihood)</th>
+                        <th>Consequence (Severity)</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>1 (Low)</strong></td>
+                        <td>Remote, unlikely to occur</td>
+                        <td>Minor injury atau minor equipment damage</td>
+                        <td>Acceptable risk, no action required</td>
+                    </tr>
+                    <tr>
+                        <td><strong>2 (Medium)</strong></td>
+                        <td>Unlikely, but possible</td>
+                        <td>Serious injury atau significant damage</td>
+                        <td>Monitor, define improvements untuk reduce risk</td>
+                    </tr>
+                    <tr>
+                        <td><strong>3 (High)</strong></td>
+                        <td>Possible, likely to occur sometime</td>
+                        <td>Major injury atau fatality, major damage</td>
+                        <td>Immediate action required untuk reduce risk</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="image-placeholder">
+                <p><strong>🖼️ GAMBAR DIBUTUHKAN:</strong><br>
+                <strong>Filename:</strong> risk-matrix.png<br>
+                <strong>Ukuran:</strong> 600x600px<br>
+                <strong>Descripción:</strong> Risk Matrix menunjukkan kombinasi Probability (Y-axis: Low, Medium, High) vs Consequence/Severity (X-axis: Low, Medium, High). Warna untuk setiap risk level: Green (Low Risk), Yellow (Medium Risk), Red (High Risk). Tunjukkan contoh risk placement.</p>
+            </div>
+        </div>
+
+        <!-- 8. Common Pipe Failures -->
+        <h2>8. Tipe-Tipe Kegagalan Pipa Umum</h2>
+        <div class="content-box">
+            <h3>Failure Mechanisms dalam Sistem Piping:</h3>
+
+            <h4>a. Stress Corrosion Cracking (SCC)</h4>
+            <p><strong>Penyebab:</strong> Kombinasi dari tensile stress dan corrosive environment</p>
+            <p><strong>Material Susceptible:</strong> Stainless steel, Carbon steel dengan chloride</p>
+            <p><strong>Prevention:</strong> Material selection, stress relief, corrosion inhibitor</p>
+
+            <h4>b. Erosion-Corrosion</h4>
+            <p><strong>Penyebab:</strong> High velocity fluid dengan erosive particles atau corrosive fluid</p>
+            <p><strong>Location:</strong> Elbow, reducer, valve seat (turbulent zones)</p>
+            <p><strong>Prevention:</strong> Lower velocity limit (< 6-10 ft/sec), smoother bend radius</p>
+
+            <h4>c. Corrosion / Uniform Attack</h4>
+            <p><strong>Penyebab:</strong> Chemical attack dari fluid terhadap pipe material</p>
+            <p><strong>Material Selection:</strong> Sesuaikan material dengan media (SS untuk acid, carbon steel untuk basic)</p>
+            <p><strong>Monitoring:</strong> Regular inspection, ultrasonic thickness testing</p>
+
+            <h4>d. Fatigue Cracking</h4>
+            <p><strong>Penyebab:</strong> Cyclic stress dari vibration, thermal cycling, pressure cycling</p>
+            <p><strong>Critical Points:</strong> Support locations, pipe bends, branch connections</p>
+            <p><strong>Prevention:</strong> Proper support design, vibration dampening, allow thermal expansion</p>
+
+            <h4>e. Water Hammer / Surge Pressure</h4>
+            <p><strong>Penyebab:</strong> Sudden closure dari valve, pump shutdown, rapid velocity change</p>
+            <p><strong>Consequence:</strong> Extreme transient pressure spike bisa rupture pipa</p>
+            <p><strong>Prevention:</strong> Slow valve closure, surge tank, pressure relief valve</p>
+
+            <h4>f. Mechanical Damage</h4>
+            <p><strong>Penyebab:</strong> External impact, improper handling, construction damage</p>
+            <p><strong>Prevention:</strong> Protective covers, careful handling, quality control during installation</p>
+
+            <div class="image-placeholder">
+                <p><strong>🖼️ GAMBAR DIBUTUHKAN:</strong><br>
+                <strong>Filename:</strong> pipe-failure-types.png<br>
+                <strong>Ukuran:</strong> 800x400px<br>
+                <strong>Descripción:</strong> Ilustrasi 6 tipe kegagalan pipa: (1) SCC crack pattern, (2) Erosion-corrosion thinning di elbow, (3) Uniform corrosion surface, (4) Fatigue cracks dari vibration, (5) Water hammer pressure spike waveform, (6) Impact damage dent. Tunjukkan cross-section dan causes.</p>
+            </div>
+        </div>
+
+        <!-- 9. Pipe Inspection Methods -->
+        <h2>9. Metode Inspeksi Pipa</h2>
+        <div class="content-box">
+            <h3>Visual Inspection (VI):</h3>
+            <ul>
+                <li>Dilakukan secara visual untuk identify obvious defects, leaks, deformation</li>
+                <li>Frekuensi: Rutin (harian/weekly), atau sesuai monitoring plan</li>
+                <li>Limited: Tidak bisa detect internal defects atau sub-surface cracks</li>
+            </ul>
+
+            <h3>Ultrasonic Thickness Testing (UT):</h3>
+            <ul>
+                <li>Menggunakan ultrasonic wave untuk measure sisa wall thickness pipa</li>
+                <li>Dapat detect corrosion/thinning yang sudah terjadi</li>
+                <li>Non-destructive, dapat repeat di lokasi yang sama untuk trending</li>
+                <li>Frekuensi: Annual hingga every 5 years tergantung service</li>
+            </ul>
+
+            <h3>Radiography (X-ray / Gamma Ray):</h3>
+            <ul>
+                <li>Menggunakan radiation untuk penetrate pipa dan detect internal defects</li>
+                <li>Dapat identify cracks, porosity, lack of fusion di welds</li>
+                <li>Destructive (safety hazard), lebih mahal dan kompleks</li>
+                <li>Biasanya untuk inspection weld quality, tidak routine maintenance</li>
+            </ul>
+
+            <h3>Eddy Current Testing (ET):</h3>
+            <ul>
+                <li>Menggunakan electromagnetic induction untuk detect surface cracks dan defects</li>
+                <li>Tidak bisa detect subsurface defects</li>
+                <li>Cepat dan portable, cocok untuk scanning wide areas</li>
+            </ul>
+
+            <div class="image-placeholder">
+                <p><strong>🖼️ GAMBAR DIBUTUHKAN:</strong><br>
+                <strong>Filename:</strong> inspection-procedure.png<br>
+                <strong>Ukuran:</strong> 700x400px<br>
+                <strong>Descripción:</strong> Prosedur inspeksi pipa: (1) Visual Inspection dengan checklist, (2) UT probe positioning pada pipa, (3) X-ray setup, (4) Eddy Current probe. Tunjukkan hasil reading untuk good vs defective pipa.</p>
+            </div>
+        </div>
+
+        <!-- 10. Standar Referensi -->
+        <h2>10. Standar Internasional & Referensi</h2>
+        <div class="content-box">
+            <h3>Pipe Sizing & Design:</h3>
+            <ul>
+                <li><strong>ASME B36.10M:</strong> Welded and seamless wrought steel pipe</li>
+                <li><strong>ASME B31.3:</strong> Process piping design requirements</li>
+                <li><strong>API 600:</strong> Steel ball valves</li>
+                <li><strong>API 610:</strong> Centrifugal pumps for petroleum service</li>
+            </ul>
+
+            <h3>HAZOP & Risk Assessment:</h3>
+            <ul>
+                <li><strong>IEC 61882:</strong> Hazard and operability studies (HAZOP)</li>
+                <li><strong>CCPS Guidelines:</strong> Guidelines for Hazard Evaluation Procedures</li>
+                <li><strong>API RP 750:</strong> Management of Process Hazards</li>
+                <li><strong>ISO 31010:</strong> Risk assessment techniques</li>
+            </ul>
+
+            <h3>Inspection & Maintenance:</h3>
+            <ul>
+                <li><strong>API 570:</strong> Piping inspection code (maintenance, inspection, alteration, rerating)</li>
+                <li><strong>ASME B31.G:</strong> Manual for determining remaining strength of corroded pipelines</li>
+                <li><strong>ASTM E494:</strong> Eddy current testing of metals</li>
+                <li><strong>ASTM A213:</strong> Seamless ferritic alloy-steel boiler tubes and high-temp service tubes</li>
+            </ul>
+        </div>
+
+        <!-- 11. Best Practices -->
+        <h2>11. Best Practices dalam Piping System Design & Operation</h2>
+        <div class="content-box">
+            <h3>Design Practices:</h3>
+            <ul>
+                <li><strong>Proper Schedule Selection:</strong> Gunakan schedule yang tepat untuk design pressure dengan adequate factor of safety</li>
+                <li><strong>Material Compatibility:</strong> Sesuaikan material dengan fluid service (chemical compatibility)</li>
+                <li><strong>Support Design:</strong> Provide adequate support untuk minimize vibration dan thermal stress</li>
+                <li><strong>Pressure Relief:</strong> Install pressure relief valve yang properly sized dan set</li>
+                <li><strong>Check Valves:</strong> Install pada pump discharge untuk prevent backflow</li>
+                <li><strong>Isolation Valves:</strong> Install untuk facilitate maintenance tanpa shutting entire system</li>
+            </ul>
+
+            <h3>Operational Practices:</h3>
+            <ul>
+                <li><strong>Regular Inspection:</strong> Visual inspection rutin untuk identify early signs of problems</li>
+                <li><strong>UT Testing:</strong> Schedule periodic UT testing di high-risk areas (elbows, reducers, corrosive service)</li>
+                <li><strong>Pressure Monitoring:</strong> Maintain pressure gauge readings untuk track system health</li>
+                <li><strong>Temperature Control:</strong> Maintain temperature di design range untuk prevent thermal stress</li>
+                <li><strong>Velocity Control:</strong> Monitor flow velocity untuk prevent erosion-corrosion</li>
+                <li><strong>Record Keeping:</strong> Maintain detailed inspection records untuk trending dan compliance</li>
+            </ul>
+
+            <h3>Common Mistakes to Avoid:</h3>
+            <ul>
+                <li>❌ Oversizing pipes untuk anticipated future capacity (waste cost, low velocity problems)</li>
+                <li>❌ Undersizing pipes untuk save cost (high velocity, erosion, energy loss)</li>
+                <li>❌ Ignoring corrosion allowance di aggressive service</li>
+                <li>❌ Not considering thermal expansion dalam support design</li>
+                <li>❌ Skipping HAZOP study untuk "simple" systems</li>
+                <li>❌ Neglecting routine inspection hingga ada masalah</li>
+            </ul>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>📚 EMMT Learning</h4>
+                <p>Platform pembelajaran online untuk Elemen Mesin dan Menggambar Teknik di Universitas Sriwijaya.</p>
+            </div>
+            <div class="footer-section">
+                <h4>📖 Topik Lainnya</h4>
+                <ul>
+                    <li><a href="fastener-joint.html">Fastener & Joint</a></li>
+                    <li><a href="pfd-symbols.html">PFD Symbols</a></li>
+                    <li><a href="pipeline-colors.html">Pipeline Colors</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>🔗 Standar Referensi</h4>
+                <ul>
+                    <li>ASME B31.3</li>
+                    <li>IEC 61882</li>
+                    <li>API 570</li>
+                    <li>CCPS Guidelines</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>👤 Creator</h4>
+                <p><strong>Tiara Anisda Rahmadani</strong></p>
+                <p>NIM: 03031182530006</p>
+                <p>Teknik Kimia - Semester 2</p>
+                <p>Universitas Sriwijaya</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 EMMT Learning Platform | Universitas Sriwijaya</p>
+            <p>Edukasi untuk masa depan engineer yang lebih baik</p>
+        </div>
+    </footer>
+</body>
+</html>
